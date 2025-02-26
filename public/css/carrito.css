@@ -1,0 +1,653 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Barra de promoción */
+.promo-bar {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 9px 0;
+    font-size: 80%;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%; /* Cambiado a 100% */
+    overflow: hidden; /* Evita cualquier desbordamiento */
+}
+
+/* Header */
+header {
+    background-color: #f8f8f8;
+    padding: 0 0 20px;
+    border-bottom: 1px solid #ddd;
+    width: 100%; /* Asegura que el ancho sea el 100% */
+    overflow: hidden; /* Evita el desplazamiento horizontal */
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%; /* Ancho del 90% */
+    margin: 0 auto;
+    max-width: 1200px; /* Limita el ancho máximo */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo de la imagen del logo */
+.logo img {
+    height: 40px; /* Altura de la imagen */
+}
+
+/* Estilos para la navegación */
+nav {
+    display: flex; /* Usar display flex */
+    align-items: center; /* Alinear verticalmente */
+}
+
+
+/* Ajustes para evitar el desbordamiento en pantallas pequeñas */
+body {
+    overflow-x: hidden; /* Evita el desbordamiento lateral */
+}
+
+/* Navegación o footer */
+nav, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+
+/* Lista de iconos */
+.left-icons {
+    list-style-type: none; /* Sin viñetas */
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin relleno */
+    display: flex; /* Usar display flex */
+    align-items: left; /* Alinear elementos a la izquierda */
+}
+
+.left-icons li {
+    margin-right: 20px; /* Espaciado derecho entre iconos */
+}
+
+.left-icons li:last-child {
+    margin-right: 0; /* Sin espaciado para el último icono */
+}
+
+/* Estilos para los enlaces de los iconos */
+.left-icons a {
+    text-decoration: none; /* Sin subrayado */
+    color: #333; /* Color del texto */
+    font-weight: bold; /* Negrita */
+}
+
+.left-icons a:hover {
+    color: #555; /* Color de texto al pasar el cursor */
+}
+
+/* Estilos para los iconos de Font Awesome */
+.left-icons i {
+    font-size: 1.2rem; /* Tamaño de fuente */
+    color: #333; /* Color del icono */
+}
+
+/* Estilos para el menú superior */
+.centered-menu {
+    text-align: center; /* Centrar contenido */
+    margin: 20px 0; /* Margen superior e inferior */
+}
+
+.top-menu {
+    list-style-type: none; /* Sin viñetas */
+    display: inline-block; /* Mostrar en línea */
+    padding: 0; /* Sin relleno */
+    margin: 0; /* Sin margen */
+    text-align: center; /* Centrar texto */
+}
+
+.top-menu li {
+    display: inline; /* Mostrar elementos en línea */
+    margin: 0 15px; /* Margen lateral entre elementos */
+}
+
+.top-menu a {
+    text-decoration: none; /* Sin subrayado */
+    color: #333; /* Color del texto */
+    font-weight: bold; /* Negrita */
+    font-size: 1.2rem; /* Tamaño de fuente */
+}
+
+.top-menu a:hover {
+    color: #555; /* Color al pasar el cursor */
+}
+
+/* Estilos para el formulario de búsqueda */
+
+.search-bar1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-bar1 .form-control {
+    display: inline-block;
+    width: auto;
+}
+
+/* Lupa */
+.lupa1 {
+    color: #000000; /* Cambia el color aquí (este es un ejemplo de un color naranja) */
+    font-size: 20px; /* Aumenta el tamaño aquí (ajústalo a lo que necesites) */
+}
+
+.search-bar .btn {
+    background-color: #ffffff; /* Color de fondo del botón */
+    border-color: #9e9e9e; /* Color del borde del botón */
+    font-size: 21px; /* Aumenta el tamaño del icono */
+    margin-top: -5px; /* Ajusta el valor para moverlo hacia arriba */
+}
+
+
+/* Ajustes específicos para el contenido dentro del footer */
+footer {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+footer a {
+    color: #333; /* Color del texto */
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    padding: 0 15px; /* Espacio lateral entre los enlaces */
+}
+/* Estilos generales del footer */
+.footer {
+    background-color: #d3d3d3; /* Color de fondo gris */
+    padding: 20px 0; /* Espaciado superior e inferior reducido */
+    text-align: center; /* Centrar contenido */
+    font-family: 'Montserrat', sans-serif; /* Fuente Montserrat */
+}
+
+/* Estilos para el logo del footer */
+.footer-logo h1 {
+    font-size: 36px; /* Tamaño reducido del logo */
+    font-weight: bold; /* Negrita */
+    margin: 0 0 15px; /* Margen inferior reducido */
+}
+
+/* Estilos para los iconos de redes sociales */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+.social-icons a:hover {
+    color: #555; /* Color al pasar el cursor */
+}
+
+/* Estilos generales del footer */
+.footer {
+    background-color: #f8f8f8; /* Color de fondo igual al header */
+    padding: 20px 0; /* Espaciado superior e inferior reducido */
+    text-align: center; /* Centrar contenido */
+    font-family: 'Montserrat', sans-serif; /* Fuente Montserrat */
+}
+
+.footer-logo {
+    margin-bottom: 15px;
+}
+
+.footer-logo-image {
+    height: 40px;
+}
+
+/* Estilos generales del footer */
+.footer {
+    background-color: #f8f8f8; /* Mismo color de fondo que el header */
+    padding: 20px 0; /* Espaciado superior e inferior */
+    text-align: center; /* Centrar contenido */
+    font-family: 'Montserrat', sans-serif; /* Fuente Montserrat */
+    border-top: 1px solid #ddd; /* Borde superior similar al borde inferior del header */
+}
+
+/* Estilos para el logo del footer */
+.footer-logo h1 {
+    font-size: 36px; /* Tamaño ajustado del logo */
+    font-weight: bold; /* Negrita */
+    color: #333; /* Color similar al texto del header */
+    margin: 0 0 15px; /* Margen inferior */
+}
+
+/* Estilos para los iconos de redes sociales */
+.social-icons {
+    margin-bottom: 15px; /* Espaciado inferior */
+}
+
+.social-icons a {
+    margin: 0 8px; /* Espaciado entre iconos */
+    color: #333; /* Color de los iconos similar al texto del header */
+    font-size: 20px; /* Tamaño ajustado de los iconos */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.social-icons a:hover {
+    color: #555; /* Color al pasar el cursor */
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #555; /* Color al pasar el cursor */
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+    grid-template-rows: repeat(2, 1fr); /* Dos filas de igual tamaño */
+    gap: 0px; /* Espacio entre las imágenes */
+    margin: 20px auto; /* Centra la galería y agrega margen */
+    max-width: 800px; /* Ancho máximo de la galería */
+}
+
+
+.gallery-item {
+    overflow: hidden; /* Oculta cualquier contenido que sobresalga */
+    cursor: pointer; /* Cambia el cursor al pasar sobre las imágenes */
+}
+
+.gallery-item img {
+    width: 100%; /* Asegura que la imagen ocupe todo el espacio del contenedor */
+    height: 100%; /* Asegura que la imagen ocupe la altura del contenedor */
+    border-top: #e0e0e0; /* Bordes redondeados */
+    transition: transform 0.3s; /* Efecto de transición */
+}
+.gallery-item img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+.collection-2024 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.collection-item img {
+    width: 420px; /* Ajusta el ancho de todas las imágenes */
+    height: 400px; /* Define una altura fija para uniformidad */
+    object-fit: cover; /* Recorta las imágenes si es necesario para que se adapten al contenedor */
+    border: 3px solid transparent;
+    margin: 1px; /* Espacio uniforme alrededor de las imágenes */
+}
+
+.collection-item img:hover {
+    transition: transform 0.3s; /* Añade un efecto de transformación para una transición suave */
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.discover-button,
+.back-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #333;
+    background-color: #e0e0e0;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.discover-button:hover,
+.back-button:hover {
+    background-color: #c0c0c0;
+    color: #000;
+    transition: background-color 0.3s;
+}
+
+#featured-image {
+    width: 100%; /* El contenedor ocupa todo el ancho */
+    height: auto; /* Se ajusta dinámicamente según el contenido */
+    position: relative; /* Para mantener control sobre elementos hijos */
+    overflow: hidden; /* Evita que partes no deseadas de la imagen sobresalgan */
+}
+
+#featured-image .featured-img {
+    width: 100%; /* La imagen abarca todo el ancho del contenedor */
+    height: 100%; /* La imagen se ajusta para cubrir el contenedor */
+    object-fit: cover; /* Hace que la imagen se recorte adecuadamente sin deformarse */
+    display: block; /* Elimina el espacio vacío debajo de la imagen */
+}
+
+.login-form { 
+    /* Oculta el formulario inicialmente */
+    display: none; 
+    /* Fija su posición en la pantalla */
+    position: fixed; 
+    /* Establece la posición superior y derecha */
+    top: 50px; 
+    right: 10px; 
+    /* Define el color de fondo */
+    background: #fff; 
+    /* Agrega un borde al formulario */
+    border: 1px solid #ddd; 
+    /* Añade espacio interno alrededor del contenido */
+    padding: 20px; 
+    /* Aplica una sombra alrededor del formulario */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    /* Establece la prioridad de apilamiento */
+    z-index: 1000; 
+}
+
+.login-content h2 { 
+    /* Elimina el margen superior del encabezado */
+    margin-top: 0; 
+    /* Define el tamaño de fuente del encabezado */
+    font-size: 1.5rem; 
+}
+
+.login-content form { 
+    /* Hace que los elementos dentro del formulario se apilen verticalmente */
+    display: flex; 
+    flex-direction: column; 
+}
+
+.login-content label { 
+    /* Establece margen superior e inferior para las etiquetas */
+    margin-top: 10px; 
+    margin-bottom: 5px; 
+}
+
+.login-content input { 
+    /* Agrega espacio interno en los campos de entrada */
+    padding: 10px; 
+    /* Establece margen inferior entre los campos */
+    margin-bottom: 10px; 
+    /* Define un borde alrededor de los campos */
+    border: 1px solid #ddd; 
+    /* Redondea las esquinas de los campos */
+    border-radius: 4px; 
+}
+
+.login-content a { 
+    /* Establece el color del texto del enlace */
+    color: #000000; 
+    /* Elimina el subrayado predeterminado */
+    text-decoration: none; 
+    /* Ajusta el tamaño de fuente del enlace */
+    font-size: 0.9rem; 
+    /* Establece un margen inferior */
+    margin-bottom: 10px; 
+}
+
+.login-content button { 
+    /* Agrega espacio interno al botón */
+    padding: 10px; 
+    /* Elimina el borde predeterminado */
+    border: none; 
+    /* Define el color de fondo del botón */
+    background-color: #E4E4E4; 
+    /* Establece el color del texto */
+    color: #000000; 
+    /* Ajusta el tamaño de fuente */
+    font-size: 1rem; 
+    /* Redondea las esquinas del botón */
+    border-radius: 4px; 
+    /* Cambia el cursor al pasar sobre el botón */
+    cursor: pointer; 
+}
+
+/* Estilos de login y registro*/
+.login-footer { 
+    /* Alinea los elementos en línea y los distribuye horizontalmente */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.login-footer p { 
+    /* Elimina el margen predeterminado del párrafo */
+    margin: 0; 
+}
+
+.login-footer a { 
+    /* Establece el color del enlace */
+    color: #000000; 
+    /* Elimina el subrayado predeterminado */
+    text-decoration: none; 
+    /* Ajusta el tamaño de fuente del enlace */
+    font-size: 0.9rem; 
+}
+
+.login-footer button { 
+    /* Hace transparente el fondo del botón */
+    background-color: transparent; 
+    /* Define el color del texto */
+    color: #000000; 
+    /* Elimina el borde predeterminado */
+    border: none; 
+    /* Cambia el cursor al pasar sobre el botón */
+    cursor: pointer; 
+}
+/* CIEERE INTERFAZ PRINCPAL */  
+
+
+
+
+
+
+
+
+
+/* Contenedor de los detalles del producto */
+/* Contenedor de los detalles del producto */
+.product-detail-container {
+    display: flex;
+    justify-content: center; /* Centra todo el contenido */
+    align-items: flex-start;
+    margin-top: 30px;
+    gap: 40px;
+}
+
+/* Contenedor de la imagen principal y miniaturas */
+.product-image {
+    display: flex;
+    flex-direction: row; /* Cambiado de column a row */
+    gap: 20px; /* Espacio entre la imagen principal y las miniaturas */
+}
+
+/* Estilo de la imagen principal */
+.product-image img {
+    width: 100%;
+    max-width: 350px; /* Tamaño ajustable de la imagen principal */
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Contenedor de las miniaturas */
+.image-thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Estilo de las miniaturas */
+.image-thumbnails img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.image-thumbnails img {
+    border: 2px solid transparent; /* Borde por defecto */
+    transition: border 0.3s; /* Transición suave */
+}
+
+.image-thumbnails img:hover {
+    border: 2px solid #5e5b5a; /* Borde al pasar el ratón */
+}
+
+
+.product-info {
+    max-width: 500px;
+    width: 100%;
+}
+
+.product-info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.product-info .price {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.product-options {
+    margin-bottom: 20px;
+}
+
+.product-options .size,
+.product-options .color,
+.product-options .quantity {
+    margin-bottom: 15px;
+}
+
+.product-options select,
+.product-options .quantity-btn {
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.add-to-cart-btn {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #333130;
+}
+
+
+
+
+.tabs-container {
+    margin-top: 20px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Cambia de center a flex-start si quieres alinear hacia un lado */
+    margin-left: 460px; /* Ajusta este valor para mover hacia la derecha */
+}
+
+.tabs {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+
+.tabs button:hover {
+    color: #424140;
+}
+
+.tab-content {
+    margin-top: 20px;
+    font-size: 1rem;
+    text-align: left;
+    display: none; /* Por defecto, ocultamos todas las secciones */
+}
+.tab-content.active {
+    display: block; /* Mostramos la sección activa */
+}
+
+
+
+    .tabs button {
+        background: none;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-bottom: 2px solid transparent; /* Por defecto, sin subrayado */
+        
+    }
+
+    .tabs button.active {
+        border-bottom: 2px solid #000000; /* Subrayado para el botón activo */
+        color: #000000; /* Cambiar color del texto si lo deseas */
+        font-weight: bold;
+    }
+
+    .tabs button:hover {
+        color: #5b5c5e; /* Color al pasar el ratón por encima */
+
+
+
+    }
+ /* alerta guardar */
+/* Estilo para la alerta de éxito */
+.alert-success {
+    font-size: 14px; /* Texto pequeño */
+    padding: 8px 16px; /* Espaciado pequeño */
+    position: fixed; /* Fijado en la pantalla */
+    bottom: 350px; /* Ajustado un poco más arriba */
+    left: 63%;
+    transform: translateX(-50%); /* Centra completamente */
+    z-index: 9999; /* Asegura que esté encima de otros elementos */
+    max-width: 300px; /* Ancho máximo para la alerta */
+    display: none; /* Inicialmente oculto */
+    background-color: #828582; /* Fondo verde */
+    color: white; /* Texto blanco */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Centrar el texto */
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.5s ease; /* Transición suave */
+}
+
+/* Mostrar la alerta cuando tenga la clase 'show' */
+.alert-success.show {
+    display: block; /* Mostrar el mensaje */
+    opacity: 1; /* Hacer visible la alerta */
+}
+

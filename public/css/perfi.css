@@ -1,0 +1,702 @@
+/* INTERFAZ PERFILES */
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Botones generales */
+button.view-more, .view-more,
+button.edit-btn, .edit-btn {
+    background-color: #c9c9c9; /* Color de fondo inicial */
+    color: #000000; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interior */
+    font-size: 16px; /* Tamaño de fuente */
+    border: none; /* Sin borde */
+    border-radius: 20px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a mano */
+    font-family: Arial, sans-serif; /* Fuente */
+    transition: background-color 0.3s ease; /* Transición suave */
+    /* Mover un poco a la izquierda y abajo */
+    position: relative;
+    left: -70px;  /* Mueve a la izquierda (usa valores negativos) */
+    top: 20px;    /* Mueve hacia abajo */
+}
+
+button.view-more:hover, .view-more:hover,
+button.edit-btn:hover, .edit-btn:hover {
+    background-color: #2f2828; /* Color al pasar el mouse */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.navbar h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.navbar nav a {
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.icons span {
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+/* Perfil */
+.profile {
+    background-color: #d9d9d9;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    font-size: 48px;
+    color: #555;
+}
+
+.avatar i {
+    font-size: 80px; /* Tamaño del ícono */
+    color: #333; /* Color del ícono */
+    margin-bottom: 10px; /* Espacio debajo del ícono */
+}
+
+.avatar p {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 2;
+}
+
+.user-details input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+
+/* Mis Favoritos y Mi Carrito */
+.favorites, .carri {
+    padding: 20px;
+    margin-bottom: 20px; /* Espaciado entre secciones */
+}
+
+/* Alineación del título de Mis Favoritos */
+.favorites-title {
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-left: 20px; /* Espaciado desde el borde izquierdo */
+    font-size: 24px; /* Tamaño de fuente para destacar */
+    font-weight: bold;
+}
+
+/* Alineación del título de Mi Carrito */
+.carri-title {
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-left: 20px; /* Espaciado desde el borde izquierdo */
+    font-size: 24px; /* Tamaño de fuente para destacar */
+    font-weight: bold;
+}
+
+/* Contenedor de productos */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los productos se envuelvan */
+    gap: 20px; /* Espaciado entre productos */
+    justify-content: center; /* Centra los productos horizontalmente */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    margin-bottom: 20px; /* Espaciado debajo de los productos */
+}
+
+/* Tarjetas de producto */
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: 180px; /* Ajuste del tamaño del contenedor */
+    text-align: center;
+    box-sizing: border-box; /* Evita que padding afecte el tamaño total */
+}
+
+/* Imágenes dentro de las tarjetas */
+.product-card img {
+    width: 100%; /* Ajusta al ancho del contenedor */
+    height: 250px; /* Altura ajustada */
+    object-fit: cover; /* Recorta el exceso y mantiene proporciones */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Texto dentro de las tarjetas */
+.product-card p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* Asegura que el botón de "Ver más" esté en su propia fila */
+.carri-footer, .favorites-footer {
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+    text-align: center; /* Centra el botón */
+    margin-top: 20px; /* Espaciado encima del botón */
+    display: block; /* Hace que el contenedor se muestre como bloque */
+}
+
+/* Botón "Ver más" */
+.view-more {
+    background-color: #a4a4a4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    display: block; /* Asegura que el botón ocupe toda una fila */
+    max-width: 200px; /* Limita el tamaño del botón */
+    margin: 0 auto; /* Centra el botón */
+}
+/* CIERRE INTERFAZ PERFILES */
+
+
+
+
+
+
+/* INICIO INTERFAZ PRINCPAL */  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Barra de promoción */
+.promo-bar {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 9px 0;
+    font-size: 80%;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%; /* Cambiado a 100% */
+    overflow: hidden; /* Evita cualquier desbordamiento */
+}
+
+/* Header */
+header {
+    background-color: #f8f8f8;
+    padding: 0 0 20px;
+    border-bottom: 1px solid #ddd;
+    width: 100%; /* Asegura que el ancho sea el 100% */
+    overflow: hidden; /* Evita el desplazamiento horizontal */
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%; /* Ancho del 90% */
+    margin: 0 auto;
+    max-width: 1200px; /* Limita el ancho máximo */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo de la imagen del logo */
+.logo img {
+    height: 40px; /* Altura de la imagen */
+}
+
+/* Estilos para la navegación */
+nav {
+    display: flex; /* Usar display flex */
+    align-items: center; /* Alinear verticalmente */
+}
+
+
+/* Ajustes para evitar el desbordamiento en pantallas pequeñas */
+body {
+    overflow-x: hidden; /* Evita el desbordamiento lateral */
+}
+
+/* Navegación o footer */
+nav, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+
+/* Lista de iconos */
+.left-icons {
+    list-style-type: none; /* Sin viñetas */
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin relleno */
+    display: flex; /* Usar display flex */
+    align-items: left; /* Alinear elementos a la izquierda */
+}
+
+.left-icons li {
+    margin-right: 20px; /* Espaciado derecho entre iconos */
+}
+
+.left-icons li:last-child {
+    margin-right: 0; /* Sin espaciado para el último icono */
+}
+
+/* Estilos para los enlaces de los iconos */
+.left-icons a {
+    text-decoration: none; /* Sin subrayado */
+    color: #333; /* Color del texto */
+    font-weight: bold; /* Negrita */
+}
+
+.left-icons a:hover {
+    color: #555; /* Color de texto al pasar el cursor */
+}
+
+/* Estilos para los iconos de Font Awesome */
+.left-icons i {
+    font-size: 1.2rem; /* Tamaño de fuente */
+    color: #333; /* Color del icono */
+}
+
+/* Estilos para el menú superior */
+.centered-menu {
+    text-align: center; /* Centrar contenido */
+    margin: 20px 0; /* Margen superior e inferior */
+}
+
+.top-menu {
+    list-style-type: none; /* Sin viñetas */
+    display: inline-block; /* Mostrar en línea */
+    padding: 0; /* Sin relleno */
+    margin: 0; /* Sin margen */
+    text-align: center; /* Centrar texto */
+}
+
+.top-menu li {
+    display: inline; /* Mostrar elementos en línea */
+    margin: 0 15px; /* Margen lateral entre elementos */
+}
+
+.top-menu a {
+    text-decoration: none; /* Sin subrayado */
+    color: #333; /* Color del texto */
+    font-weight: bold; /* Negrita */
+    font-size: 1.2rem; /* Tamaño de fuente */
+}
+
+.top-menu a:hover {
+    color: #555; /* Color al pasar el cursor */
+}
+
+/* Estilos para el formulario de búsqueda */
+.search-form {
+    display: none; /* Oculto por defecto */
+    position: absolute; /* Posición absoluta */
+    top: 60px; /* Posición desde la parte superior */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Ajuste de centrado */
+    width: 100%; /* Ancho completo */
+    max-width: 500px; /* Ancho máximo */
+    background-color: white; /* Fondo blanco */
+    border: 1px solid #ddd; /* Borde */
+    padding: 10px; /* Relleno interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+    z-index: 1000; /* Prioridad de visualización */
+}
+
+.search-content {
+    display: flex; /* Usar display flex */
+}
+
+.search-content form {
+    display: flex; /* Usar display flex */
+    width: 100%; /* Ancho completo */
+}
+
+.search-content input {
+    flex-grow: 1; /* Expandir a lo largo del contenedor */
+    padding: 8px; /* Relleno interno */
+    border: 1px solid #ddd; /* Borde */
+    border-radius: 5px 0 0 5px; /* Bordes redondeados */
+}
+
+.search-content button {
+    padding: 8px 15px; /* Relleno interno */
+    border: none; /* Sin borde */
+    background-color: #333; /* Fondo negro */
+    color: white; /* Color del texto */
+    border-radius: 0 5px 5px 0; /* Bordes redondeados */
+    cursor: pointer; /* Mostrar cursor de puntero */
+}
+
+/* Ajustes específicos para el contenido dentro del footer */
+footer {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+footer a {
+    color: #333; /* Color del texto */
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    padding: 0 15px; /* Espacio lateral entre los enlaces */
+}
+/* Estilos generales del footer */
+.footer {
+    background-color: #d3d3d3; /* Color de fondo gris */
+    padding: 20px 0; /* Espaciado superior e inferior reducido */
+    text-align: center; /* Centrar contenido */
+    font-family: 'Montserrat', sans-serif; /* Fuente Montserrat */
+}
+
+/* Estilos para el logo del footer */
+.footer-logo h1 {
+    font-size: 36px; /* Tamaño reducido del logo */
+    font-weight: bold; /* Negrita */
+    margin: 0 0 15px; /* Margen inferior reducido */
+}
+
+/* Estilos para los iconos de redes sociales */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+.social-icons a:hover {
+    color: #555; /* Color al pasar el cursor */
+}
+
+/* Estilos generales del footer */
+.footer {
+    background-color: #f8f8f8; /* Color de fondo igual al header */
+    padding: 20px 0; /* Espaciado superior e inferior reducido */
+    text-align: center; /* Centrar contenido */
+    font-family: 'Montserrat', sans-serif; /* Fuente Montserrat */
+}
+
+.footer-logo {
+    margin-bottom: 15px;
+}
+
+.footer-logo-image {
+    height: 40px;
+}
+
+/* Estilos generales del footer */
+.footer {
+    background-color: #f8f8f8; /* Mismo color de fondo que el header */
+    padding: 20px 0; /* Espaciado superior e inferior */
+    text-align: center; /* Centrar contenido */
+    font-family: 'Montserrat', sans-serif; /* Fuente Montserrat */
+    border-top: 1px solid #ddd; /* Borde superior similar al borde inferior del header */
+}
+
+/* Estilos para el logo del footer */
+.footer-logo h1 {
+    font-size: 36px; /* Tamaño ajustado del logo */
+    font-weight: bold; /* Negrita */
+    color: #333; /* Color similar al texto del header */
+    margin: 0 0 15px; /* Margen inferior */
+}
+
+/* Estilos para los iconos de redes sociales */
+.social-icons {
+    margin-bottom: 15px; /* Espaciado inferior */
+}
+
+.social-icons a {
+    margin: 0 8px; /* Espaciado entre iconos */
+    color: #333; /* Color de los iconos similar al texto del header */
+    font-size: 20px; /* Tamaño ajustado de los iconos */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.social-icons a:hover {
+    color: #555; /* Color al pasar el cursor */
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #555; /* Color al pasar el cursor */
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+    grid-template-rows: repeat(2, 1fr); /* Dos filas de igual tamaño */
+    gap: 0px; /* Espacio entre las imágenes */
+    margin: 20px auto; /* Centra la galería y agrega margen */
+    max-width: 800px; /* Ancho máximo de la galería */
+}
+
+
+.gallery-item {
+    overflow: hidden; /* Oculta cualquier contenido que sobresalga */
+    cursor: pointer; /* Cambia el cursor al pasar sobre las imágenes */
+}
+
+.gallery-item img {
+    width: 100%; /* Asegura que la imagen ocupe todo el espacio del contenedor */
+    height: 100%; /* Asegura que la imagen ocupe la altura del contenedor */
+    border-top: #e0e0e0; /* Bordes redondeados */
+    transition: transform 0.3s; /* Efecto de transición */
+}
+.gallery-item img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+.collection-2024 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.collection-item img {
+    width: 420px; /* Ajusta el ancho de todas las imágenes */
+    height: 400px; /* Define una altura fija para uniformidad */
+    object-fit: cover; /* Recorta las imágenes si es necesario para que se adapten al contenedor */
+    border: 3px solid transparent;
+    margin: 1px; /* Espacio uniforme alrededor de las imágenes */
+}
+
+.collection-item img:hover {
+    transition: transform 0.3s; /* Añade un efecto de transformación para una transición suave */
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.discover-button,
+.back-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #333;
+    background-color: #e0e0e0;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.discover-button:hover,
+.back-button:hover {
+    background-color: #c0c0c0;
+    color: #000;
+    transition: background-color 0.3s;
+}
+
+#featured-image {
+    width: 100%; /* El contenedor ocupa todo el ancho */
+    height: auto; /* Se ajusta dinámicamente según el contenido */
+    position: relative; /* Para mantener control sobre elementos hijos */
+    overflow: hidden; /* Evita que partes no deseadas de la imagen sobresalgan */
+}
+
+#featured-image .featured-img {
+    width: 100%; /* La imagen abarca todo el ancho del contenedor */
+    height: 100%; /* La imagen se ajusta para cubrir el contenedor */
+    object-fit: cover; /* Hace que la imagen se recorte adecuadamente sin deformarse */
+    display: block; /* Elimina el espacio vacío debajo de la imagen */
+}
+
+/* Estilos para el formulario de registro */
+.login-form { 
+    /* Oculta el formulario inicialmente */
+    display: none; 
+    /* Fija su posición en la pantalla */
+    position: fixed; 
+    /* Establece la posición superior y derecha */
+    top: 50px; 
+    right: 10px; 
+    /* Define el color de fondo */
+    background: #fff; 
+    /* Agrega un borde al formulario */
+    border: 1px solid #ddd; 
+    /* Añade espacio interno alrededor del contenido */
+    padding: 20px; 
+    /* Aplica una sombra alrededor del formulario */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    /* Establece la prioridad de apilamiento */
+    z-index: 1000; 
+}
+
+.login-content h2 { 
+    /* Elimina el margen superior del encabezado */
+    margin-top: 0; 
+    /* Define el tamaño de fuente del encabezado */
+    font-size: 1.5rem; 
+}
+
+.login-content form { 
+    /* Hace que los elementos dentro del formulario se apilen verticalmente */
+    display: flex; 
+    flex-direction: column; 
+}
+
+.login-content label { 
+    /* Establece margen superior e inferior para las etiquetas */
+    margin-top: 10px; 
+    margin-bottom: 5px; 
+}
+
+.login-content input { 
+    /* Agrega espacio interno en los campos de entrada */
+    padding: 10px; 
+    /* Establece margen inferior entre los campos */
+    margin-bottom: 10px; 
+    /* Define un borde alrededor de los campos */
+    border: 1px solid #ddd; 
+    /* Redondea las esquinas de los campos */
+    border-radius: 4px; 
+}
+
+.login-content a { 
+    /* Establece el color del texto del enlace */
+    color: #000000; 
+    /* Elimina el subrayado predeterminado */
+    text-decoration: none; 
+    /* Ajusta el tamaño de fuente del enlace */
+    font-size: 0.9rem; 
+    /* Establece un margen inferior */
+    margin-bottom: 10px; 
+}
+
+.login-content button { 
+    /* Agrega espacio interno al botón */
+    padding: 10px; 
+    /* Elimina el borde predeterminado */
+    border: none; 
+    /* Define el color de fondo del botón */
+    background-color: #E4E4E4; 
+    /* Establece el color del texto */
+    color: #000000; 
+    /* Ajusta el tamaño de fuente */
+    font-size: 1rem; 
+    /* Redondea las esquinas del botón */
+    border-radius: 4px; 
+    /* Cambia el cursor al pasar sobre el botón */
+    cursor: pointer; 
+}
+
+.login-footer { 
+    /* Alinea los elementos en línea y los distribuye horizontalmente */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.login-footer p { 
+    /* Elimina el margen predeterminado del párrafo */
+    margin: 0; 
+}
+
+.login-footer a { 
+    /* Establece el color del enlace */
+    color: #000000; 
+    /* Elimina el subrayado predeterminado */
+    text-decoration: none; 
+    /* Ajusta el tamaño de fuente del enlace */
+    font-size: 0.9rem; 
+}
+
+.login-footer button { 
+    /* Hace transparente el fondo del botón */
+    background-color: transparent; 
+    /* Define el color del texto */
+    color: #000000; 
+    /* Elimina el borde predeterminado */
+    border: none; 
+    /* Cambia el cursor al pasar sobre el botón */
+    cursor: pointer; 
+}
+
+
+/* CIEERE INTERFAZ PRINCPAL */  
+
+.contact1-title {
+    background-color: #E4E4E4;
+    padding: 5px 0px;
+    text-align: center;
+    width: 100vw; /* 100% del ancho del viewport */
+    margin: 0; /* Elimina cualquier margen */
+    position: relative; /* Asegura la posición dentro del flujo */
+    box-sizing: border-box;
+}
+
+.contact1-title h1 {
+    margin: 0; /* Asegura que el margen del título no afecte el diseño */
+    font-size: 24px;
+    color: #000000;
+    position: relative;
+    top: 10px; /* Mueve el título hacia abajo */
+    font-family: 'Lora', serif;
+ 
+}

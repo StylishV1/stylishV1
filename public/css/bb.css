@@ -1,0 +1,1039 @@
+/* INICIO INTERFAZ PRINCPAL */  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Barra de promoción */
+.promo-bar {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 9px 0;
+    font-size: 80%;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%; /* Cambiado a 100% */
+    overflow: hidden; /* Evita cualquier desbordamiento */
+}
+
+/* Header */
+header {
+    background-color: #f8f8f8;
+    padding: 0 0 20px;
+    border-bottom: 1px solid #ddd;
+    width: 100%; /* Asegura que el ancho sea el 100% */
+    overflow: hidden; /* Evita el desplazamiento horizontal */
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%; /* Ancho del 90% */
+    margin: 0 auto;
+    max-width: 1200px; /* Limita el ancho máximo */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo de la imagen del logo */
+.logo img {
+    height: 40px; /* Altura de la imagen */
+}
+
+/* Estilos para la navegación */
+nav {
+    display: flex; /* Usar display flex */
+    align-items: center; /* Alinear verticalmente */
+}
+
+
+/* Ajustes para evitar el desbordamiento en pantallas pequeñas */
+body {
+    overflow-x: hidden; /* Evita el desbordamiento lateral */
+}
+
+/* Navegación o footer */
+nav, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+
+/* Lista de iconos */
+.left-icons {
+    list-style-type: none; /* Sin viñetas */
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin relleno */
+    display: flex; /* Usar display flex */
+    align-items: left; /* Alinear elementos a la izquierda */
+}
+
+.left-icons li {
+    margin-right: 20px; /* Espaciado derecho entre iconos */
+}
+
+.left-icons li:last-child {
+    margin-right: 0; /* Sin espaciado para el último icono */
+}
+
+/* Estilos para los enlaces de los iconos */
+.left-icons a {
+    text-decoration: none; /* Sin subrayado */
+    color: #333; /* Color del texto */
+    font-weight: bold; /* Negrita */
+}
+
+.left-icons a:hover {
+    color: #555; /* Color de texto al pasar el cursor */
+}
+
+/* Estilos para los iconos de Font Awesome */
+.left-icons i {
+    font-size: 1.2rem; /* Tamaño de fuente */
+    color: #333; /* Color del icono */
+}
+
+/* Estilos para el menú superior */
+.centered-menu {
+    text-align: center; /* Centrar contenido */
+    margin: 20px 0; /* Margen superior e inferior */
+}
+
+.top-menu {
+    list-style-type: none; /* Sin viñetas */
+    display: inline-block; /* Mostrar en línea */
+    padding: 0; /* Sin relleno */
+    margin: 0; /* Sin margen */
+    text-align: center; /* Centrar texto */
+}
+
+.top-menu li {
+    display: inline; /* Mostrar elementos en línea */
+    margin: 0 15px; /* Margen lateral entre elementos */
+}
+
+.top-menu a {
+    text-decoration: none; /* Sin subrayado */
+    color: #333; /* Color del texto */
+    font-weight: bold; /* Negrita */
+    font-size: 1.2rem; /* Tamaño de fuente */
+}
+
+.top-menu a:hover {
+    color: #555; /* Color al pasar el cursor */
+}
+
+/* Estilos para el formulario de búsqueda */
+.search-form {
+    display: none; /* Oculto por defecto */
+    position: absolute; /* Posición absoluta */
+    top: 60px; /* Posición desde la parte superior */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Ajuste de centrado */
+    width: 100%; /* Ancho completo */
+    max-width: 500px; /* Ancho máximo */
+    background-color: white; /* Fondo blanco */
+    border: 1px solid #ddd; /* Borde */
+    padding: 10px; /* Relleno interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+    z-index: 1000; /* Prioridad de visualización */
+}
+
+.search-content {
+    display: flex; /* Usar display flex */
+}
+
+.search-content form {
+    display: flex; /* Usar display flex */
+    width: 100%; /* Ancho completo */
+}
+
+.search-content input {
+    flex-grow: 1; /* Expandir a lo largo del contenedor */
+    padding: 8px; /* Relleno interno */
+    border: 1px solid #ddd; /* Borde */
+    border-radius: 5px 0 0 5px; /* Bordes redondeados */
+}
+
+.search-content button {
+    padding: 8px 15px; /* Relleno interno */
+    border: none; /* Sin borde */
+    background-color: #333; /* Fondo negro */
+    color: white; /* Color del texto */
+    border-radius: 0 5px 5px 0; /* Bordes redondeados */
+    cursor: pointer; /* Mostrar cursor de puntero */
+}
+
+/* Ajustes específicos para el contenido dentro del footer */
+footer {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+footer a {
+    color: #333; /* Color del texto */
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    padding: 0 15px; /* Espacio lateral entre los enlaces */
+}
+/* Estilos generales del footer */
+.footer {
+    background-color: #d3d3d3; /* Color de fondo gris */
+    padding: 20px 0; /* Espaciado superior e inferior reducido */
+    text-align: center; /* Centrar contenido */
+    font-family: 'Montserrat', sans-serif; /* Fuente Montserrat */
+}
+
+/* Estilos para el logo del footer */
+.footer-logo h1 {
+    font-size: 36px; /* Tamaño reducido del logo */
+    font-weight: bold; /* Negrita */
+    margin: 0 0 15px; /* Margen inferior reducido */
+}
+
+/* Estilos para los iconos de redes sociales */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+.social-icons a:hover {
+    color: #555; /* Color al pasar el cursor */
+}
+
+/* Estilos generales del footer */
+.footer {
+    background-color: #f8f8f8; /* Color de fondo igual al header */
+    padding: 20px 0; /* Espaciado superior e inferior reducido */
+    text-align: center; /* Centrar contenido */
+    font-family: 'Montserrat', sans-serif; /* Fuente Montserrat */
+}
+
+.footer-logo {
+    margin-bottom: 15px;
+}
+
+.footer-logo-image {
+    height: 40px;
+}
+
+/* Estilos generales del footer */
+.footer {
+    background-color: #f8f8f8; /* Mismo color de fondo que el header */
+    padding: 20px 0; /* Espaciado superior e inferior */
+    text-align: center; /* Centrar contenido */
+    font-family: 'Montserrat', sans-serif; /* Fuente Montserrat */
+    border-top: 1px solid #ddd; /* Borde superior similar al borde inferior del header */
+}
+
+/* Estilos para el logo del footer */
+.footer-logo h1 {
+    font-size: 36px; /* Tamaño ajustado del logo */
+    font-weight: bold; /* Negrita */
+    color: #333; /* Color similar al texto del header */
+    margin: 0 0 15px; /* Margen inferior */
+}
+
+/* Estilos para los iconos de redes sociales */
+.social-icons {
+    margin-bottom: 15px; /* Espaciado inferior */
+}
+
+.social-icons a {
+    margin: 0 8px; /* Espaciado entre iconos */
+    color: #333; /* Color de los iconos similar al texto del header */
+    font-size: 20px; /* Tamaño ajustado de los iconos */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.social-icons a:hover {
+    color: #555; /* Color al pasar el cursor */
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #555; /* Color al pasar el cursor */
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+    grid-template-rows: repeat(2, 1fr); /* Dos filas de igual tamaño */
+    gap: 0px; /* Espacio entre las imágenes */
+    margin: 20px auto; /* Centra la galería y agrega margen */
+    max-width: 800px; /* Ancho máximo de la galería */
+}
+
+
+.gallery-item {
+    overflow: hidden; /* Oculta cualquier contenido que sobresalga */
+    cursor: pointer; /* Cambia el cursor al pasar sobre las imágenes */
+}
+
+.gallery-item img {
+    width: 100%; /* Asegura que la imagen ocupe todo el espacio del contenedor */
+    height: 100%; /* Asegura que la imagen ocupe la altura del contenedor */
+    border-top: #e0e0e0; /* Bordes redondeados */
+    transition: transform 0.3s; /* Efecto de transición */
+}
+.gallery-item img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+.collection-2024 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.collection-item img {
+    width: 420px; /* Ajusta el ancho de todas las imágenes */
+    height: 400px; /* Define una altura fija para uniformidad */
+    object-fit: cover; /* Recorta las imágenes si es necesario para que se adapten al contenedor */
+    border: 3px solid transparent;
+    margin: 1px; /* Espacio uniforme alrededor de las imágenes */
+}
+
+.collection-item img:hover {
+    transition: transform 0.3s; /* Añade un efecto de transformación para una transición suave */
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.discover-button,
+.back-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #333;
+    background-color: #e0e0e0;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.discover-button:hover,
+.back-button:hover {
+    background-color: #c0c0c0;
+    color: #000;
+    transition: background-color 0.3s;
+}
+
+#featured-image {
+    width: 100%; /* El contenedor ocupa todo el ancho */
+    height: auto; /* Se ajusta dinámicamente según el contenido */
+    position: relative; /* Para mantener control sobre elementos hijos */
+    overflow: hidden; /* Evita que partes no deseadas de la imagen sobresalgan */
+}
+
+#featured-image .featured-img {
+    width: 100%; /* La imagen abarca todo el ancho del contenedor */
+    height: 100%; /* La imagen se ajusta para cubrir el contenedor */
+    object-fit: cover; /* Hace que la imagen se recorte adecuadamente sin deformarse */
+    display: block; /* Elimina el espacio vacío debajo de la imagen */
+}
+* Estilos para el formulario de registro */
+.login-form { 
+    /* Oculta el formulario inicialmente */
+    display: none; 
+    /* Fija su posición en la pantalla */
+    position: fixed; 
+    /* Establece la posición superior y derecha */
+    top: 50px; 
+    right: 10px; 
+    /* Define el color de fondo */
+    background: #fff; 
+    /* Agrega un borde al formulario */
+    border: 1px solid #ddd; 
+    /* Añade espacio interno alrededor del contenido */
+    padding: 20px; 
+    /* Aplica una sombra alrededor del formulario */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    /* Establece la prioridad de apilamiento */
+    z-index: 1000; 
+}
+
+.login-content h2 { 
+    /* Elimina el margen superior del encabezado */
+    margin-top: 0; 
+    /* Define el tamaño de fuente del encabezado */
+    font-size: 1.5rem; 
+}
+
+.login-content form { 
+    /* Hace que los elementos dentro del formulario se apilen verticalmente */
+    display: flex; 
+    flex-direction: column; 
+}
+
+.login-content label { 
+    /* Establece margen superior e inferior para las etiquetas */
+    margin-top: 10px; 
+    margin-bottom: 5px; 
+}
+
+.login-content input { 
+    /* Agrega espacio interno en los campos de entrada */
+    padding: 10px; 
+    /* Establece margen inferior entre los campos */
+    margin-bottom: 10px; 
+    /* Define un borde alrededor de los campos */
+    border: 1px solid #ddd; 
+    /* Redondea las esquinas de los campos */
+    border-radius: 4px; 
+}
+
+.login-content a { 
+    /* Establece el color del texto del enlace */
+    color: #000000; 
+    /* Elimina el subrayado predeterminado */
+    text-decoration: none; 
+    /* Ajusta el tamaño de fuente del enlace */
+    font-size: 0.9rem; 
+    /* Establece un margen inferior */
+    margin-bottom: 10px; 
+}
+
+.login-content button { 
+    /* Agrega espacio interno al botón */
+    padding: 10px; 
+    /* Elimina el borde predeterminado */
+    border: none; 
+    /* Define el color de fondo del botón */
+    background-color: #E4E4E4; 
+    /* Establece el color del texto */
+    color: #000000; 
+    /* Ajusta el tamaño de fuente */
+    font-size: 1rem; 
+    /* Redondea las esquinas del botón */
+    border-radius: 4px; 
+    /* Cambia el cursor al pasar sobre el botón */
+    cursor: pointer; 
+}
+
+/* Estilos de login y registro*/
+.login-footer { 
+    /* Alinea los elementos en línea y los distribuye horizontalmente */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.login-footer p { 
+    /* Elimina el margen predeterminado del párrafo */
+    margin: 0; 
+}
+
+.login-footer a { 
+    /* Establece el color del enlace */
+    color: #000000; 
+    /* Elimina el subrayado predeterminado */
+    text-decoration: none; 
+    /* Ajusta el tamaño de fuente del enlace */
+    font-size: 0.9rem; 
+}
+
+.login-footer button { 
+    /* Hace transparente el fondo del botón */
+    background-color: transparent; 
+    /* Define el color del texto */
+    color: #000000; 
+    /* Elimina el borde predeterminado */
+    border: none; 
+    /* Cambia el cursor al pasar sobre el botón */
+    cursor: pointer; 
+}
+/* CIEERE INTERFAZ PRINCPAL */  
+
+
+
+
+
+
+/*INICIO DE INTERFAZ CONTACTANOS  BRAYAN PANTOJA*/
+
+
+
+.top-menu a:hover {
+    color: #555;
+}
+
+/* Estilos para la página de registro */
+/* Elimina el espacio interno (padding) alrededor del contenido dentro del <main> */
+main {
+    padding: 0px;
+}
+
+/* Centra el texto y elimina el margen superior de los elementos <h2> */
+h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+/* Ajusta la imagen dentro del contenedor con ID "featured-image" al 100% del ancho y altura automática */
+#featured-image img {
+    width: 100%; /* 100% del ancho del contenedor */
+    height: auto; /* Altura ajustada automáticamente para mantener la proporción */
+}
+
+/* Organiza las imágenes en un contenedor flexible con espacio alrededor y permite que se envuelvan */
+#grouped-images {
+    display: flex; /* Contenedor flexible */
+    justify-content: space-around; /* Espacio alrededor de los elementos hijos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una línea */
+}
+
+/* Organiza las imágenes en una columna, centradas horizontalmente, con margen inferior */
+.image-row {
+    display: flex; /* Contenedor flexible */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    margin-bottom: 20px; /* Margen inferior de 20px */
+}
+
+/* Ajusta las imágenes dentro de .image-row al 100% del ancho, altura automática y ancho máximo de 300px */
+.image-row img {
+    width: 100%; /* 100% del ancho del contenedor */
+    height: auto; /* Altura ajustada automáticamente */
+    max-width: 300px; /* Ancho máximo de 300px */
+}
+
+/* Organiza los íconos en un contenedor flexible con espacio alrededor y margen superior */
+.icon-row {
+    display: flex; /* Contenedor flexible */
+    justify-content: space-around; /* Espacio alrededor de los elementos hijos */
+    width: 100%; /* 100% del ancho del contenedor */
+    margin-top: 10px; /* Margen superior de 10px */
+}
+
+/* Elimina los estilos de lista predeterminados y convierte la lista en un contenedor flexible */
+.icon-row ul {
+    list-style-type: none; /* Elimina los marcadores de lista */
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el relleno */
+    display: flex; /* Contenedor flexible */
+}
+
+/* Añade un margen derecho de 10px entre los elementos de la lista */
+.icon-row li {
+    margin-right: 10px; /* Margen derecho de 10px */
+}
+
+/* Elimina el subrayado de los enlaces y cambia su color a gris oscuro (#333) */
+.icon-row a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: #333; /* Color del texto: gris oscuro (#333) */
+}
+
+/* Cambia el color de los enlaces a gris más claro (#555) al pasar el cursor sobre ellos */
+.icon-row a:hover {
+    color: #555; /* Color del texto al hacer hover: gris más claro (#555) */
+}
+
+/* Estilos para el botón "Comprar ahora": relleno, fondo oscuro, texto blanco y cursor de tipo pointer */
+.buy-now {
+    padding: 10px 20px; /* Relleno interno: 10px arriba/abajo, 20px izquierda/derecha */
+    background-color: #333; /* Color de fondo: gris oscuro (#333) */
+    color: white; /* Color del texto: blanco */
+    border: none; /* Elimina el borde */
+    cursor: pointer; /* Cambia el cursor a pointer (mano) */
+}
+
+/* Cambia el color de fondo del botón a gris más claro (#555) al pasar el cursor sobre él */
+.buy-now:hover {
+    background-color: #555; /* Color de fondo al hacer hover: gris más claro (#555) */
+}
+
+/* fondo fris */    /* CONTCTANOS*/    
+.contact1-title {
+    background-color: #E4E4E4;
+    padding: 5px 0px;
+    text-align: center;
+    width: 100vw; /* 100% del ancho del viewport */
+    margin: 0; /* Elimina cualquier margen */
+    position: relative; /* Asegura la posición dentro del flujo */
+    box-sizing: border-box;
+}
+
+.contact1-title h1 {
+    margin: 0; /* Asegura que el margen del título no afecte el diseño */
+    font-size: 24px;
+    color: #000000;
+    position: relative;
+    top: 10px; /* Mueve el título hacia abajo */
+    font-family: 'Lora', serif;
+ 
+}
+
+.contact-section1 {
+    
+    /* padding: 40px 20px; */
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+
+    box-sizing: border-box; /* Para que padding no aumente el tamaño */
+    padding: 0px;
+    margin: 0; /* Elimina márgenes que puedan romper el diseño */
+    width: 100vw; /* Asegura que ocupe todo el ancho de la ventana */
+}
+
+/* Aplica estilos a los elementos <h1> dentro de elementos con la clase .contact-section1 */
+.contact-section1 h1 {
+    font-size: 2em; /* Tamaño de fuente de 2em (el doble del tamaño base) */
+    margin-bottom: 20px; /* Margen inferior de 20px para separar el título del contenido siguiente */
+}
+
+/* Aplica estilos a elementos con la clase .contact-container (contenedor flexible) */
+.contact-container {
+    display: flex; /* Convierte el contenedor en un contenedor flexible (flexbox) */
+    justify-content: space-around; /* Distribuye el espacio alrededor de los elementos hijos */
+    flex-wrap: wrap; /* Permite que los elementos hijos se envuelvan si no caben en una línea */
+    max-width: 1200px; /* Ancho máximo del contenedor de 1200px */
+    margin: 0 auto; /* Centra el contenedor horizontalmente en la página */
+    padding: 0; /* Elimina el relleno interno del contenedor */
+    width: 100%; /* Ocupa el 100% del ancho disponible */
+    box-sizing: border-box; /* Incluye el padding y el borde en el cálculo del ancho total */
+}
+                                                      /* Todos los texto de la interza  */
+
+
+.contact-form1 {
+    width: 70%; /* Usa todo el ancho disponible */
+    max-width: 500px; /* Opcional: limita el ancho máximo */
+    margin: 0; /* Elimina cualquier margen automático */
+    padding: 20px; /* Espacio interior del contenedor */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    
+}
+
+.contact1-info {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 45%;
+    min-width: 300px;
+    margin: 10px;
+    border-radius: 8px;
+    margin-left: auto; /* Empuja el elemento hacia la derecha */
+    margin-right: 0;   /* Asegúrate de que no haya margen a la derecha */
+
+}
+.texts1 {
+    max-width: 900px; /* Controla el ancho máximo */
+    margin: 20px auto; /* Centra el párrafo horizontalmente */
+    padding: 10px; /* Añade espacio interno */
+    text-align: justify; /* Justifica el texto */
+    font-size: 17px; /* Tamaño de la fuente */
+    
+    color: #333; /* Color del texto */
+    background-color: #fff; /* Fondo blanco */
+    margin-left: 110px;/* mover el texto*/
+    font-family: 'Lora', serif;
+    
+}
+.redes1  {
+    margin-left: 130px;/* mover el texto*/
+    text-align: justify; /* Justifica el texto */
+    font-family: 'Lora', serif;     
+}
+.redes1 a {
+    color: rgb(0, 0, 0); /* Cambia el color del texto de los enlaces */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+.redes1 :hover {
+    background-color: rgb(170, 168, 168); /* Cambia el fondo al pasar el mouse */
+    color: #ffffff; /* Cambia el color del texto al pasar el mouse */
+}
+
+.lodo-txt {
+    
+ margin-right: 60px; /* Espacio a la derecha de la imagen */
+    
+    
+}
+
+.contactanos {
+    margin-left: 130px;/* mover el texto INFORMACION DE CONTACTO*/
+}
+
+.escribenos {   
+        margin-left: -6px; /* Mueve hacia la izquierda */ 
+}
+
+.textos-e {
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-left: 0;   /* Asegúrate de que no haya margen izquierdo */
+    font-family: 'Lora', serif;
+    
+}
+
+
+
+
+.contact-form1 h2,
+.contact1-info h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.contact-form1 label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.contact-form1 input,
+
+
+                                                       /* Campo del contactanos */
+
+
+.contact-form1 textarea {
+    background-color: #E4E4E4 ; /* Cambia color */
+    border: 1px solid #ffffff;  /* vorde del campo */
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact-form1 textarea {
+    height: 100px;
+}
+
+.contact-form1 button {              /* Boton de Enviar */
+    width: 100%; /* largo */
+    padding: 10px; /* ancho*/
+    background-color: #E4E4E4; /* Color */
+    color: rgb(0, 0, 0); /* Color texto */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;   
+}
+.contact-form1 button:hover {
+    background-color: rgb(34, 32, 32); /* Cambia el fondo al pasar el mouse */
+    color: #ffffff; /* Cambia el color del texto al pasar el mouse */
+}
+
+/* Aplica estilos a los párrafos (<p>) dentro de elementos con la clase .contact1-info */
+.contact1-info p {
+    margin-bottom: 20px; /* Margen inferior de 20px para separar párrafos */
+    line-height: 1.5; /* Altura de línea de 1.5 para mejorar la legibilidad del texto */
+}
+
+/* Aplica estilos a las listas no ordenadas (<ul>) dentro de elementos con la clase .contact1-info */
+.contact1-info ul {
+    list-style: none; /* Elimina los marcadores de lista (puntos o números) */
+}
+
+/* Aplica estilos a los elementos de lista (<li>) dentro de elementos con la clase .contact1-info */
+.contact1-info li {
+    margin: 10px 0; /* Margen superior e inferior de 10px para separar elementos de la lista */
+    font-size: 1.1em; /* Tamaño de fuente un 10% más grande que el tamaño base */
+}
+
+/* Aplica estilos a elementos con la clase .top-bar (barra superior) */
+.top-bar {
+    background-color: black; /* Fondo de color negro */
+    color: white; /* Texto de color blanco */
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 3px 0; /* Relleno interno de 3px arriba/abajo y 0 a los lados */
+    font-size: 0.9em; /* Tamaño de fuente un 10% más pequeño que el tamaño base */
+}
+/*FIN DE INTERFAS CONTACTANOS */  
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+                           /* INICIO INTERFAZ DETALLE-BOLSA -BRAYAN PANTOJA*/
+
+body {
+    
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Lora', serif;
+  }
+  
+  .container1 {
+    max-width: 1200px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    
+    
+  }
+  /* texto titulo bolsa de compra*/ 
+  h1 {
+    text-align: center;/* texto centrar*/ 
+    font-size: 30px; /* tamano*/ 
+    margin-bottom: 10px;
+    
+  }
+  
+  /* texto debajo de mi bolsa de compra*/
+  .summary1 {                   
+    text-align: center;
+    margin-bottom: 50px; /*espacio entre titulo y productos*/
+    font-size: 16px; /* tamano*/
+    color: #000000;
+    font-family: 'Lora', serif;
+  }
+  
+  .content1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .titulobolsa{
+        font-family: 'lora', sans-serif;
+  }
+  
+  .productsbolsa {
+    width: 65%;
+  }
+  
+  h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-family: 'lora', sans-serif;   
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-left: 0; /* Ajusta el margen izquierdo a tu preferencia */
+  }
+  
+  .productbolsa {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fffcfc;
+    font-family: 'Lora', serif;
+  }
+  /* Forma de la imagen */ 
+  .productbolsa img {
+    width: 150px;  /*Tamana */ 
+    height: auto;
+    margin-right: 20px; /* margen*/ 
+    border-radius: 4px; /* borde de la foto*/ 
+  }
+  
+  .details h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .details p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #000000;
+  }
+  
+  .price {
+    margin-left: auto;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+  }
+  /* boton x */
+  .remove {
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #000000;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-top: 30px; /* Mueve hacia abajo */
+  }
+  
+  .summary-section1 {
+    width: 35%;
+    padding: 30px;
+    border: 1px solid #ffffff;    
+    border-radius: 10px;
+    background: #ffffff;
+    font-family: 'Lora', serif;
+  }
+  
+  .summary-section p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin: 15px 0;
+    color: rgb(255, 255, 255)fff;
+  }
+  
+  .summary-section .total {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  hr {
+    border: 0;
+    border-top: 1px solid #000000; /* linea de compra*/
+    margin: 20px 0;
+  }
+  
+  .continue {
+    width: 100%;
+    background: black;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  /*color de boton cambia color */ 
+  .continue:hover {
+    background: #7e7e7e;
+  }
+  
+
+/* FINALIZA INTERFAZ DETALLE-BOLSAS */
+
+
+
+
+
+
+
+
+
+
+
+
+/* inicio INTERFAZ DETALLE-BOLSAS */
+
+/* Global Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Favoritos Section */
+.favorites-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.favorites-container h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #2e0a0a;
+}
+
+.favorites-container p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Product Grid */
+.favorites-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.favorite-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.favorite-item img {
+    width: 100%;
+    height: 300px; /* Aumentar la altura */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.favorite-item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.favorite-item .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2e0a0a;
+    margin: 10px 0;
+}
+
+.favorite-item button {
+    background-color: #2e0a0a;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.favorite-item button:hover {
+    background-color: #4c1212;
+}
+
+
+
