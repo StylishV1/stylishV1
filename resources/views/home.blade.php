@@ -65,7 +65,7 @@
     <header>
         <!-- Barra de promoción -->
         <div class="promo-bar">
-            Solo por hoy 50% de descuento en camisas y blusas
+            Solo por hoy 20% de descuento en camisas y blusas
         </div>
 
         <div class="container">
