@@ -17,7 +17,7 @@
 
         <!-- Barra de promoción -->
         <div class="promo-bar">
-            Solo por hoy 20% de descuento en camisas y blusas <!-- Texto de promoción -->
+            Solo por hoy 200% de descuento en camisas y blusas <!-- Texto de promoción -->
         </div>
 
         <div class="container"> <!-- Contenedor principal del encabezado -->
