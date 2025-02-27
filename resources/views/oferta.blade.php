@@ -20,7 +20,7 @@
 <body>
     <header>
         <div class="promo-bar">
-            Solo por hoy 20% de descuento en camisas y blusas
+            Solo por hoy 200% de descuento en camisas y blusas
         </div>
         <div class="container">
             <a href="{{ url('/') }}" class="logo" id="logo">
