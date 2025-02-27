@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Favorito;
+use App\Models\User; 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -46,7 +47,36 @@ class ProfileController extends Controller
         }
 
         $user->save();
+        return redirect('/perfil')->with('success', 'Perfil actualizado correctamente.');
 
-        return redirect()->route('perfil')->with('success', 'Perfil actualizado correctamente.');
+
+        
     }
+    public function mostrareFavoritos()
+    {
+        if (!auth()->check()) {
+            return redirect('/login')->with('error', 'Debes iniciar sesión para ver tus favoritos.');
+        }
+    
+        $user = Auth::user(); // ✅ Obtiene el usuario autenticado
+        $favoritos = Favorito::where('user_id', auth()->id())->get(); // ✅ Obtiene los favoritos
+    
+        return view('perfiles', compact('user', 'favoritos')); // ✅ Envia 'user' y 'favoritos' a la vista
+    }
+    public function perfil()
+    {
+        if (!auth()->check()) {
+            return redirect('/login')->with('error', 'Debes iniciar sesión para ver tu perfil.');
+        }
+    
+        $favoritos = Favorito::where('user_id', Auth::id())->get();
+    
+        // Depurar antes de enviar a la vista
+        foreach ($favoritos as $favorito) {
+            \Log::info('Imagen de favorito: ' . $favorito->imagen);
+        }
+    
+        return view('perfil', compact('favoritos'));
+    }
+    
 }

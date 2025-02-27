@@ -1,17 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stylish - bb</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-     <!--<link rel="stylesheet" href="Styles.css"> -->
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="{{ asset('css/perfi.CSS') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <link rel="stylesheet" href="{{ asset('css/ESTILOS.CSS') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <!-- Barra superior con descuento -->
     <header> <!-- Sección del encabezado de la página -->
         <!-- Barra de promoción -->
         <div class="promo-bar">
@@ -28,8 +27,8 @@
             <!-- Menú de navegación centrado -->
             <nav class="centered-menu">
                 <ul class="top-menu"> <!-- Lista de elementos del menú superior -->
-                    <li><a href="{{ url('/hombre') }}">Hombre</a></li> <!-- Enlace a la sección de Hombre -->
-                    <li><a href="{{ url('/mujer') }}">Mujer</a></li> <!-- Enlace a la sección de MUJER -->
+                    <li><a href="#">Hombre</a></li> <!-- Enlace a la sección de Hombre -->
+                    <li><a href="#">Mujer</a></li> <!-- Enlace a la sección de Mujer -->
                     <li><a href="{{ url('/ofertas') }}">Ofertas</a></li> <!-- Enlace a la sección de Ofertas -->
                     <li><a href="{{ url('/tendencias') }}">Tendencias</a></li> <!-- Enlace a la sección de Tendencias -->
                 </ul>
@@ -37,145 +36,206 @@
 
             <!-- Lista de iconos a la izquierda -->
             <ul class="left-icons">
-            <li><a href="{{ url('/buscar') }}" id="search-toggle"><i class="fas fa-search"></i> Buscar</a></li>
-            <li><a href="{{ url('/perfil') }}" id="profile-link"><i class="fas fa-user"></i> Perfil</a></li>
-            <li><a href="{{ url('/favoritos') }}"><i class="fas fa-heart"></i> Favoritos</a></li>
-            <li><a href="{{ url('/carrito') }}"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
-        </ul>
+                <li><a href="{{ url('/buscar') }}" id="search-toggle"><i class="fas fa-search"></i> Buscar</a></li> <!-- Icono de búsqueda -->
+                
+                <li><a href="{{ url('/favoritos') }}"><i class="fas fa-heart"></i> Favoritos</a></li> <!-- Icono de favoritos -->
+                <li><a href="{{ url('/carrito') }}"><i class="fas fa-shopping-cart"></i> Carrito</a></li> <!-- Icono de carrito de compras -->
+            </ul>
         </div>
     </header>
-   
-    
-    <!-- Caja de búsqueda -->
-    <div id="search-form" class="search-form">
-        <div class="search-content">
-            <form action="buscar.php" method="POST">
-                <input type="text" name="termino" placeholder="Buscar..." id="search-input">
-                <button type="submit" name="buscar" id="search-button">Buscar</button>
-            </form>
-        </div>
-    </div>
-    
+
+  
+
     <main>
-</form>
+        <div  class="contact1-title">
+            <h1>PERFILE</h1> <!-- Titulo del Formulario-->   
+         </div>
+        <!-- Sección de Perfil -->
 
 
-<main>
-<main>
-    <!-- Perfil -->
-    <section class="profile">
-        <h2>Perfil</h2>
-        <div class="profile-info">
-            <div class="avatar">
-                <i class="bi bi-person"></i>
-                <p>Nombre</p> 
-            </div>
+        <section class="profile">
+
+            
+
+            @if(auth()->check())
+    <h1>{{ auth()->user()->name }}</h1>
+    @else
+    <h1>No has iniciado sesión</h1>
+    @endif
+
+            <!-- Mostrar mensaje de éxito        
+                
+                 AVATAR 
+
+
+                <div class="profile-info">
+                <div class="avatar">
+                    <i class="bi bi-person"></i>
+                    <p>{{ $user->name }}</p>
+                </div>         -->
+
+
+
+                @if(session('success'))
+                <div class="alert alert-success" id="success-message">
+                    {{ session('success') }}
+                </div>
+                
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        setTimeout(function() {
+                            let message = document.getElementById("success-message");
+                            if (message) {
+                                message.style.display = "none";
+                            }
+                        }, 2000); // Oculta el mensaje después de 3 segundos
+                    });
+                </script>
+            @endif
+            
+
+            <div class="profile-info">
+                <div class="avatar">
+                    <i class="bi bi-person"></i>
+                    <p>{{ $user->name }}</p>
+                </div>       
+            
+            
+
+
+            
             <div class="user-details">
-                <input type="text" placeholder="Correaao">
-                <input type="text" placeholder="Número Documento">
-                <input type="text" placeholder="Teléfono">
-                <input type="text" placeholder="Fecha de Nacimiento">
-                <input type="text" placeholder="Edad">
+                <form action="{{ route('perfil.update') }}" method="POST">
+                    @csrf
+                    @method('PUT')
+    
+                    <label for="name"></label>
+                    <input type="text" name="name" value="{{ $user->name }}" placeholder="Nombre">
+    
+                    <label for="email"></label>
+                    <input type="email" name="email" value="{{ $user->email }}" placeholder="Correo electrónico">
+    
+                    <label for="password"></label>
+                    <input type="password" name="password" placeholder="Nueva contraseña">
+    
+                    <label for="password_confirmation"></label>
+                    <input type="password" name="password_confirmation" placeholder="Confirmar contraseña">
+    
+                    <button type="submit" class="edit-btn">Guardar Cambios</button>
+                    </form>
+                    
             </div>
-        </div>
-        <button class="edit-btn">Editar</button>
-    </section>
+        </section>
+    </main>
 
-  <!-- Mis Favoritos -->
-<section class="favorites">
-    <h3>Mis Favoritos ❤ <i class="bi bi-heart-fill"></i></h3>
-    <div class="product-grid">
-        <!-- Tarjetas de productos -->
-        <div class="product-card">
-            <img src="{{ asset('img/22.jpg') }}" alt="Moda 1">
-            <p>Top</p>
-            <p>$300.000</p>
-        </div>
-        <div class="product-card">
-            <img src="{{ asset('img/23.jpg') }}" alt="Moda 2">
-            <p>Camisa de satín</p>
-            <p>$400.000</p>
-        </div>
-        <div class="product-card">
-            <img src="{{ asset('img/Daniel6.jpeg') }}" alt="Conjunto">
-            <p>Conjunto</p>
-            <p>$40.000</p>
-        </div>
-        <div class="product-card">
-            <img src="{{ asset('img/Daniel.jpeg') }}" alt="Blazer">
-            <p>Blazer marrón</p>
-            <p>$50.000</p>
-        </div>
-        <div class="product-card">
-            <img src="{{ asset('img/Daniel7.jpeg') }}" alt="Falda">
-            <p>Falda</p>
-            <p>$80.000</p>
-    </div> <!-- Cierra el div .product-grid -->
     
-    <!-- Botón "Ver más" fuera de la grilla de productos -->
-    <div class="favorites-footer">
-        <button class="view-more">Ver más</button>
+<!-- Contenedor independiente SOLO para el título -->
+<div class="container text-center">
+    <h2 class="mb-4">Mis Favoritos</h2><br>
+</div>
+
+<!-- Contenedor de Favoritos (Imágenes NO se mueven) -->
+<div class="container">
+    <div class="row d-flex justify-content-center" id="favoritos-container">
+        @foreach($favoritos as $key => $favorito)
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 favorito-item {{ $key >= 6 ? 'hidden' : '' }}">
+                <div class="card">
+                    <img src="{{ $favorito->imagen }}" class="card-img-top img-fluid" alt="{{ $favorito->nombre }}">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">{{ $favorito->nombre }}</h5>
+                        <p class="card-text">COL <strong>${{ number_format($favorito->precio, 0) }}</strong></p>
+                        <button class="btn btn-danger btn-eliminar" data-nombre="{{ $favorito->nombre }}">Eliminar</button>
+                    </div>
+                </div>
+            </div>
+        @endforeach
     </div>
-</section>
+</div>
 
 
-    <!-- Mi Carrito -->
-<section class="carri">
-    <h3>Mi Carrito <i class="bi bi-cart-fill"></i></h3>
-    <div class="product-grid">
-        <!-- Tarjetas de productos -->
-        <div class="product-card">
-            <img src="{{ asset('img/Daniel4.jpeg') }}" alt="Moda 3">
-            <p>Saco tejido</p>
-            <p>$560.000</p>
-        </div>
-        <div class="product-card">
-            <img src="{{ asset('img/Mariana1.jpeg') }}" alt="Falda">
-            <p>Vestido Elegante</p>
-            <p>$200.000</p>
-        </div>
-        <div class="product-card">
-            <img src="{{ asset('img/Danil4.jpeg') }}" alt="Pantalon">
-            <p>Pantalón</p>
-            <p>$200.000</p>
-        </div>
-        <div class="product-card">
-            <img src="{{ asset('img/Daniel3.jpeg') }}" alt="Camisa">
-            <p>Camisa</p>
-            <p>$200.000</p>
-        </div>
-        <div class="product-card">
-            <img src="{{ asset('img/Daniel2.jpeg') }}" alt="Saco">
-            <p>Saco</p>
-            <p>$200.000</p>
-        </div>
-    </div> <!-- Cierra el div .product-grid -->
+@if(count($favoritos) > 6)
+    <div class="text-center mt-3">
+        <button class="btn btn-primary" id="verMasBtn">Ver más</button>
+        <button class="btn btn-secondary d-none" id="verMenosBtn">Ver menos</button>
+    </div>
+@endif
+</div>
     
-    <!-- Botón "Ver más" fuera de la grilla de productos -->
-    <div class="carri-footer">
-        <button class="view-more">Ver más</button>
-    </div>
-</section>
 
-</main>
-
-
-
-<!-- Footer -->
 <footer>
-        <div class="footer-logo">
-        <img src="{{ asset('img/Logo.jpg') }}" alt="Stylish" style="height: 40px;"> <!-- Imagen del logo -->
-        </div>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-whatsapp"></i></a> <!-- Ícono de WhatsApp -->
-        </div>
-        <div class="footer-links">
-            <a href="#">Nosotros</a>
-            <a href="#">Ayuda</a>
-            <a href="#">Términos y Condiciones</a>
-            <a href="#">Contáctanos</a>
-        </div>
-    </footer>
+    <div class="footer-logo">
+    <img src="{{ asset('img/Logo.jpg') }}" alt="Stylish" style="height: 40px;"> <!-- Imagen del logo -->
+    </div>
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a> <!-- Ícono facebook -->
+        <a href="#"><i class="fab fa-instagram"></i></a><!-- Ícono de instagram -->
+        <a href="#"><i class="fab fa-twitter"></i></a><!-- Ícono de tiwter -->
+        <a href="#"><i class="fab fa-whatsapp"></i></a> <!-- Ícono de WhatsApp -->
+    </div>
+    <div class="footer-links">
+
+    <a href="{{ url('/nosotros') }}">Nosotros</a>
+        <a href="#">Ayuda</a>
+        <a href="#">Términos y Condiciones</a>
+        <a href="#">Contáctanos</a>
+        
+    </div>
+</footer>
+  
+</body>
+</html>
+    
+   
+       
+<script>
+
+document.getElementById("avatarUpload").addEventListener("change", function(event) {
+    const file = event.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            document.querySelector(".avatar i").style.display = "none"; // Oculta el ícono
+            const img = document.getElementById("avatarPreview");
+            img.src = e.target.result;
+            img.style.display = "block";
+        };
+        reader.readAsDataURL(file);
+    }
+});
+
+
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let btnVerMas = document.getElementById("verMasBtn");
+        let btnVerMenos = document.getElementById("verMenosBtn");
+    
+        // Ocultar el botón "Ver menos" al inicio
+        btnVerMenos.style.display = "none";
+    
+        if (btnVerMas && btnVerMenos) {
+            btnVerMas.addEventListener("click", function() {
+                document.querySelectorAll(".favorito-item.hidden").forEach(el => {
+                    el.classList.remove("hidden");
+                });
+    
+                btnVerMas.style.display = "none";  // Ocultar "Ver más"
+                btnVerMenos.style.display = "inline-block";  // Mostrar "Ver menos"
+            });
+    
+            btnVerMenos.addEventListener("click", function() {
+                document.querySelectorAll(".favorito-item").forEach((el, index) => {
+                    if (index >= 6) {
+                        el.classList.add("hidden");
+                    }
+                });
+    
+                btnVerMenos.style.display = "none";  // Ocultar "Ver menos"
+                btnVerMas.style.display = "inline-block";  // Mostrar "Ver más"
+            });
+        }
+    });
+    
+    </script>
