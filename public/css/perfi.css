@@ -1,206 +1,3 @@
-/* INTERFAZ PERFILES */
-/* Estilo global */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-}
-
-/* Botones generales */
-button.view-more, .view-more,
-button.edit-btn, .edit-btn {
-    background-color: #c9c9c9; /* Color de fondo inicial */
-    color: #000000; /* Color del texto */
-    padding: 10px 20px; /* Espaciado interior */
-    font-size: 16px; /* Tamaño de fuente */
-    border: none; /* Sin borde */
-    border-radius: 20px; /* Bordes redondeados */
-    cursor: pointer; /* Cambia el cursor a mano */
-    font-family: Arial, sans-serif; /* Fuente */
-    transition: background-color 0.3s ease; /* Transición suave */
-    /* Mover un poco a la izquierda y abajo */
-    position: relative;
-    left: -70px;  /* Mueve a la izquierda (usa valores negativos) */
-    top: 20px;    /* Mueve hacia abajo */
-}
-
-button.view-more:hover, .view-more:hover,
-button.edit-btn:hover, .edit-btn:hover {
-    background-color: #2f2828; /* Color al pasar el mouse */
-}
-
-/* Navbar */
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-}
-
-.navbar h1 {
-    font-size: 28px;
-    margin: 0;
-}
-
-.navbar nav a {
-    margin: 0 15px;
-    font-size: 18px;
-}
-
-.icons span {
-    margin: 0 8px;
-    cursor: pointer;
-}
-
-/* Perfil */
-.profile {
-    background-color: #d9d9d9;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px auto;
-    width: 80%;
-    max-width: 600px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.profile h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.profile-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.avatar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    flex: 1;
-    font-size: 48px;
-    color: #555;
-}
-
-.avatar i {
-    font-size: 80px; /* Tamaño del ícono */
-    color: #333; /* Color del ícono */
-    margin-bottom: 10px; /* Espacio debajo del ícono */
-}
-
-.avatar p {
-    font-size: 16px;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-.user-details {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    flex: 2;
-}
-
-.user-details input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-    width: 100%;
-}
-
-/* Mis Favoritos y Mi Carrito */
-.favorites, .carri {
-    padding: 20px;
-    margin-bottom: 20px; /* Espaciado entre secciones */
-}
-
-/* Alineación del título de Mis Favoritos */
-.favorites-title {
-    text-align: left; /* Alinea el texto a la izquierda */
-    margin-left: 20px; /* Espaciado desde el borde izquierdo */
-    font-size: 24px; /* Tamaño de fuente para destacar */
-    font-weight: bold;
-}
-
-/* Alineación del título de Mi Carrito */
-.carri-title {
-    text-align: left; /* Alinea el texto a la izquierda */
-    margin-left: 20px; /* Espaciado desde el borde izquierdo */
-    font-size: 24px; /* Tamaño de fuente para destacar */
-    font-weight: bold;
-}
-
-/* Contenedor de productos */
-.product-grid {
-    display: flex;
-    flex-wrap: wrap; /* Permite que los productos se envuelvan */
-    gap: 20px; /* Espaciado entre productos */
-    justify-content: center; /* Centra los productos horizontalmente */
-    margin: 0 auto; /* Centra el contenedor en la página */
-    margin-bottom: 20px; /* Espaciado debajo de los productos */
-}
-
-/* Tarjetas de producto */
-.product-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 15px;
-    width: 180px; /* Ajuste del tamaño del contenedor */
-    text-align: center;
-    box-sizing: border-box; /* Evita que padding afecte el tamaño total */
-}
-
-/* Imágenes dentro de las tarjetas */
-.product-card img {
-    width: 100%; /* Ajusta al ancho del contenedor */
-    height: 250px; /* Altura ajustada */
-    object-fit: cover; /* Recorta el exceso y mantiene proporciones */
-    border-radius: 5px; /* Bordes redondeados */
-}
-
-/* Texto dentro de las tarjetas */
-.product-card p {
-    margin: 5px 0;
-    font-size: 16px;
-}
-
-/* Asegura que el botón de "Ver más" esté en su propia fila */
-.carri-footer, .favorites-footer {
-    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
-    text-align: center; /* Centra el botón */
-    margin-top: 20px; /* Espaciado encima del botón */
-    display: block; /* Hace que el contenedor se muestre como bloque */
-}
-
-/* Botón "Ver más" */
-.view-more {
-    background-color: #a4a4a4;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-    display: block; /* Asegura que el botón ocupe toda una fila */
-    max-width: 200px; /* Limita el tamaño del botón */
-    margin: 0 auto; /* Centra el botón */
-}
-/* CIERRE INTERFAZ PERFILES */
-
-
-
-
-
-
 /* INICIO INTERFAZ PRINCPAL */  
 * {
     margin: 0;
@@ -681,22 +478,238 @@ footer a {
 
 /* CIEERE INTERFAZ PRINCPAL */  
 
+
+
+/* INTERFAZ PERFILES */
+
+
+/* Estilo global */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Botones generales */
+button.view-more, .view-more,
+button.edit-btn, .edit-btn {
+    background-color: #c9c9c9; /* Color de fondo inicial */
+    color: #000000; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interior */
+    font-size: 16px; /* Tamaño de fuente */
+    border: none; /* Sin borde */
+    border-radius: 20px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a mano */
+    font-family: Arial, sans-serif; /* Fuente */
+    transition: background-color 0.3s ease; /* Transición suave */
+    /* Mover un poco a la izquierda y abajo */
+    position: relative;
+    left: -70px;  /* Mueve a la izquierda (usa valores negativos) */
+    top: 20px;    /* Mueve hacia abajo */
+}
+
+button.view-more:hover, .view-more:hover,
+button.edit-btn:hover, .edit-btn:hover {
+    background-color: #2f2828; /* Color al pasar el mouse */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+
+
+.button-container {
+    text-align: center; /* Centra el botón */
+    margin-top: 15px; /* Espacio entre el cuadro gris y el botón */
+}
+
+.edit-btn {
+    background-color: #4CAF50; /* Color verde (puedes cambiarlo) */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background-color: #45a049; /* Efecto hover */
+}
+
+
+
+
+
+.navbar h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.navbar nav a {
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.icons span {
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+/* Perfil */
+.profile {
+    background-color: #d9d9d9;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center; /* Alinea los elementos verticalmente */
+}
+
+.avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    font-size: 48px;
+    color: #555;
+}
+
+.avatar i {
+    font-size: 80px; /* Tamaño del ícono */
+    color: #333; /* Color del ícono */
+    margin-bottom: 10px; /* Espacio debajo del ícono */
+}
+
+
+.avatar p {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 2;
+}
+
+.user-details input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px; /* Ajusta según la separación deseada */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+
+
+
+
+
+/* CIERRE INTERFAZ PERFILES */
+
+
 .contact1-title {
     background-color: #E4E4E4;
-    padding: 5px 0px;
+    padding: 15px 0px; /* Aumenta el espacio interno */
     text-align: center;
-    width: 100vw; /* 100% del ancho del viewport */
-    margin: 0; /* Elimina cualquier margen */
-    position: relative; /* Asegura la posición dentro del flujo */
+    width: 100vw; /* Ocupa todo el ancho del viewport */
+    max-width: 100%; /* Asegura que no tenga un límite de ancho */
+    margin: 0 auto; /* Centra la barra */
+    position: relative; /* Mantiene su flujo normal */
     box-sizing: border-box;
+    height: 70px; /* Ajusta la altura según necesidad */
 }
 
 .contact1-title h1 {
-    margin: 0; /* Asegura que el margen del título no afecte el diseño */
-    font-size: 24px;
+    margin: 0;
+    font-size: 28px; /* Aumenta el tamaño del título */
     color: #000000;
     position: relative;
-    top: 10px; /* Mueve el título hacia abajo */
+    top: 50%; /* Centra verticalmente */
+    transform: translateY(-50%); /* Ajusta la posición */
     font-family: 'Lora', serif;
- 
 }
+
+
+
+
+   /* Imagenes*/
+
+
+  
+   .card {
+    width: 100%;
+    max-width: 200px; /* Evita que sean demasiado grandes */
+    margin: auto; /* Centra dentro del contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px; /* Todas las imágenes del mismo tamaño */
+    object-fit: cover; /* Recorta sin deformar */
+    border-radius: 10px 10px 0 0;
+}
+
+.row {
+    display: flex;
+    justify-content: center; /* Centra las tarjetas */
+    flex-wrap: wrap; /* Permite que se ajusten en filas */
+    gap: 15px; /* Espacio entre tarjetas */
+}
+
+
+.favorito-item {
+    min-height: 300px; /* Asegura que los elementos ocultos no desajusten la primera fila */
+}
+.favorito-item.hidden {
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+}
+
+.hidden {
+    display: none; /* Ocultar elementos completamente */
+}
+
+#verMenosBtn {
+    margin-top: 10px;
+}
+
+
