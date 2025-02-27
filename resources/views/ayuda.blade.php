@@ -24,8 +24,8 @@
             <!-- Menú de navegación centrado -->
             <nav class="centered-menu">
                 <ul class="top-menu"> <!-- Lista de elementos del menú superior -->
-                    <li><a href="#">Hombre</a></li> <!-- Enlace a la sección de Hombre -->
-                    <li><a href="#">Mujer</a></li> <!-- Enlace a la sección de Mujer -->
+                    <li><a href="{{ url('/hombre') }}">Hombre</a></li> <!-- Enlace a la sección de Hombre -->
+                    <li><a href="{{ url('/mujer') }}">Mujer</a></li> <!-- Enlace a la sección de MUJER -->
                     <li><a href="{{ url('/ofertas') }}">Ofertas</a></li> <!-- Enlace a la sección de Ofertas -->
                     <li><a href="{{ url('/tendencias') }}">Tendencias</a></li> <!-- Enlace a la sección de Tendencias -->
                 </ul>

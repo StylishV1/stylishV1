@@ -37,7 +37,7 @@
             <ul class="left-icons">
                 
                 
-                <li><a href="{{ url('/buscar') }}" id="search-toggle"><i class="fas fa-search"></i> Buscar</a></li>
+     <li><a href="{{ url('/buscar') }}" id="search-toggle"><i class="fas fa-search"></i> Buscar</a></li>
                 
                 @if(Auth::check())
     <li><a href="{{ url('/perfil') }}"><i class="fas fa-user"></i> Perfil</a></li>

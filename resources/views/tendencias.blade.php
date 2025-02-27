@@ -28,8 +28,8 @@
             <!-- Menú de navegación centrado -->
             <nav class="centered-menu">
                 <ul class="top-menu"> <!-- Lista de elementos del menú superior -->
-                    <li><a href="#">Hombre</a></li> <!-- Enlace a la sección de Hombre -->
-                    <li><a href="#">Mujer</a></li> <!-- Enlace a la sección de Mujer -->
+                    <li><a href="{{ url('/hombre') }}">Hombre</a></li> <!-- Enlace a la sección de Hombre -->
+                    <li><a href="{{ url('/mujer') }}">Mujer</a></li> <!-- Enlace a la sección de MUJER -->
                     <li><a href="{{ url('/ofertas') }}">Ofertas</a></li> <!-- Enlace a la sección de Ofertas -->
                     <li><a href="{{ url('/tendencias') }}">Tendencias</a></li> <!-- Enlace a la sección de Tendencias -->
                 </ul>
@@ -37,18 +37,11 @@
 
             <!-- Lista de iconos a la izquierda -->
             <ul class="left-icons">
-                
-                
-                <li><a href="{{ url('/buscar') }}" id="search-toggle"><i class="fas fa-search"></i> Buscar</a></li>
-                
-                <li><a href="{{ route('perfil') }}" id="profile-link"><i class="fas fa-user"></i> Perfil</a></li>
-                
-                
-
-
-                <li><a href="{{ url('/favoritos') }}"><i class="fas fa-heart"></i> Favoritos</a></li> <!-- Icono de favoritos -->
-                <li><a href="{{ url('/bolsas') }}"><i class="fas fa-shopping-cart"></i> Carrito</a></li> <!-- Icono de carrito de compras -->
-            </ul>
+            <li><a href="{{ url('/buscar') }}" id="search-toggle"><i class="fas fa-search"></i> Buscar</a></li>
+            <li><a href="{{ url('/perfil') }}" id="profile-link"><i class="fas fa-user"></i> Perfil</a></li>
+            <li><a href="{{ url('/favoritos') }}"><i class="fas fa-heart"></i> Favoritos</a></li>
+            <li><a href="{{ url('/carrito') }}"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+        </ul>
         </div>
     </header>
 <!-- Verificar si el usuario está autenticado -->
