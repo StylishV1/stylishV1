@@ -26,16 +26,14 @@ Route::get('/carrito', [CartController::class, 'showCart'])->name('carrito');
 Route::post('/add-to-cart', [CartController::class, 'addToCart'])->name('add.to.cart');
 
 
-
 // Ruta para mostrar la vista de perfil
 Route::middleware(['auth'])->group(function () {
     Route::get('/perfil', [ProfileController::class, 'index'])->name('perfil');
 });
 
-// Ruta para actualizar el nombre del usuario
 Route::put('/perfil/actualizar', [ProfileController::class, 'update'])->name('perfil.update')->middleware('auth');
 
-
+Route::get('/perfil', [ProfileController::class, 'mostrareFavoritos'])->middleware('auth');
 
 //rutas de login y registro
 use App\Http\Controllers\AuthController;
