@@ -180,7 +180,6 @@
                         </a>
                         <p>Camisa Lino manga larga</p>
                         <p class="precio-descuento">COL $161,500</p>
-                        <button class="boton-carrito">Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -191,7 +190,6 @@
                         </a>
                         <p>Camisa Negra manga larga</p>
                         <p class="precio-descuento">COL $161,500</p>
-                        <button class="boton-carrito">Agregar al carrito</button>
                         
                     </div>
                 </div>
@@ -203,7 +201,6 @@
                         </a>
                         <p>Camisa Azul manga larga</p>
                         <p class="precio-descuento">COL $161,500</p>
-                        <button class="boton-carrito">Agregar al carrito</button>
                         
                     </div>
                 </div>
@@ -216,8 +213,6 @@
                         </a>
                         <p>Camisa Lino manga larga</p>
                         <p class="precio-descuento">COL $161,500</p>
-                        <button class="boton-carrito">Agregar al carrito</button>
-
                       
                     </div>
                 </div>
@@ -235,7 +230,6 @@
                         </a>
                         <p>Camisa Lino manga corta</p>
                         <p class="precio-descuento">COL $161,500</p>
-                        <button class="boton-carrito">Agregar al carrito</button>
                        
                     </div>
                 </div>
@@ -247,7 +241,6 @@
                         </a>
                         <p>Camisa Rosa manga corta</p>
                         <p class="precio-descuento">COL $161,500</p>
-                        <button class="boton-carrito">Agregar al carrito</button>
                       
                     </div>
                 </div>
@@ -258,9 +251,7 @@
                         <img src="{{ asset('img/Danil4.jpg') }}" alt="Camisa Cuadros manga corta">
                         </a>
                         <p>Camisa Cuadros manga corta</p>
-                        <p class="precio-descuento">COL $161,500</p>
-                        <button class="boton-carrito">Agregar al carrito</button>
-                       
+                        <p class="precio-descuento">COL $161,500</p>                       
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -270,9 +261,7 @@
                         <img src="{{ asset('img/Danil4.jpg') }}" alt="Camisa Rosa manga corta">
                         </a>
                         <p>Camisa Rosa manga corta</p>
-                        <p class="precio-descuento">COL $161,500</p>
-                        <button class="boton-carrito">Agregar al carrito</button>
-                       
+                        <p class="precio-descuento">COL $161,500</p>                       
                     </div>
                 </div>
             </div>
@@ -289,7 +278,6 @@
                         </a>
                         <p>Polo Premium Slim Fit</p>
                         <p class="precio-descuento">COL $161,500</p>
-                        <button class="boton-carrito">Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -300,7 +288,6 @@
                         </a>
                         <p>Polo Moda Slim Fit</p>
                         <p class="precio-descuento">COL $161,500</p>
-                        <button class="boton-carrito">Agregar al carrito</button>  
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -311,8 +298,6 @@
                         </a>
                         <p>Polo Business Tejida</p>
                         <p class="precio-descuento">COL $161,500</p>
-                        <button class="boton-carrito">Agregar al carrito</button>   
-
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -322,9 +307,7 @@
                         <img src="{{ asset('img/Daniel3.jpg') }}" alt="Camisa Rosa manga corta">
                         </a>
                         <p>Camisa Rosas manga corta</p>
-                        <p class="precio-descuento">COL $161,500</p>
-                        <button class="boton-carrito">Agregar al carrito</button>                
-                        
+                        <p class="precio-descuento">COL $161,500</p>                        
                     </div>
                 </div>
             </div>

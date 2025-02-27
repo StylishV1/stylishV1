@@ -85,7 +85,6 @@
                 <p>Reloj de Diamante</p>
                 <p class="price"><s>COL $250,000</s></p>
                 <p class="precio-descuento">COL $215,000</p> <!-- Precio con descuento aplicado -->
-                <button class="boton-carrito">Agregar al carrito</button> 
             </div>
         </div>
         <!-- Producto 2 -->
@@ -98,7 +97,6 @@
                 <p>Reloj de Cuarzo</p>
                 <p class="price"><s>COL $300,000</s></p>
                 <p class="precio-descuento">COL $258,000</p>
-                <button class="boton-carrito">Agregar al carrito</button> 
             </div>
         </div>
         <!-- Producto 3 -->
@@ -111,7 +109,6 @@
                 <p>Reloj Rolex</p>
                 <p class="price"><s>COL $202,000</s></p>
                 <p class="precio-descuento">COL $173,720</p>
-                <button class="boton-carrito">Agregar al carrito</button> 
             </div>
         </div>
         <!-- Producto 4 -->
@@ -124,7 +121,6 @@
                 <p>Reloj de Oro 24k</p>
                 <p class="price"><s>COL $250,000</s></p>
                 <p class="precio-descuento">COL $215,000</p>
-                <button class="boton-carrito">Agregar al carrito</button> 
             </div>
         </div>
     </div>
@@ -144,7 +140,6 @@
                 <p>Cadena de Diamantes</p>
                 <p class="price"><s>COL $144,800</s></p>
                 <p class="precio-descuento">COL $130,320</p> <!-- Precio con descuento aplicado -->
-                <button class="boton-carrito">Agregar al carrito</button> 
             </div>
         </div>
         <!-- Producto 2 -->
@@ -157,7 +152,6 @@
                 <p>Cadena de Oro</p>
                 <p class="price"><s>COL $190,000</s></p>
                 <p class="precio-descuento">COL $171,000</p>
-                <button class="boton-carrito">Agregar al carrito</button> 
             </div>
         </div>
         <!-- Producto 3 -->
@@ -170,7 +164,6 @@
                 <p>Cadena de Plata</p>
                 <p class="price"><s>COL $160,000</s></p>
                 <p class="precio-descuento">COL $144,000</p>
-                <button class="boton-carrito">Agregar al carrito</button> 
             </div>
         </div>
         <!-- Producto 4 -->
@@ -183,7 +176,6 @@
                 <p>Cadena de Cobre</p>
                 <p class="price"><s>COL $190,000</s></p>
                 <p class="precio-descuento">COL $171,000</p>
-                <button class="boton-carrito">Agregar al carrito</button> 
             </div>
         </div>
     </div>
@@ -203,7 +195,6 @@
                 <p>Gafas de Sol</p>
                 <p class="price"><s>COL $90,000</s></p>
                 <p class="precio-descuento">COL $72,000</p>
-                <button class="boton-carrito">Agregar al carrito</button> 
             </div>
         </div>
         <!-- Producto 2 -->
@@ -216,7 +207,6 @@
                 <p>Gafas de Lujo</p>
                 <p class="price"><s>COL $82,500</s></p>
                 <p class="precio-descuento">COL $66,000</p>
-                <button class="boton-carrito">Agregar al carrito</button> 
             </div>
         </div>
         <!-- Producto 3 -->
@@ -229,7 +219,6 @@
                 <p>Gafas Rojas</p>
                 <p class="price"><s>COL $89,910</s></p>
                 <p class="precio-descuento">COL $71,928</p>
-                <button class="boton-carrito">Agregar al carrito</button> 
             </div>
         </div>
         <!-- Producto 4 -->
@@ -242,7 +231,6 @@
                 <p>Gafas Blancas</p>
                 <p class="price"><s>COL $190,000</s></p>
                 <p class="precio-descuento">COL $161,500</p>
-                <button class="boton-carrito">Agregar al carrito</button> 
             </div>
         </div>
     </div>

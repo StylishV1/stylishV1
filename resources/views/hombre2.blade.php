@@ -181,7 +181,6 @@
                         <p>Camisa Lino manga larga</p>
                         <p class="price"><s>COL $82,500</s></p>
                         <p class="precio-descuento">COL $161,500</p>
-                        <button class="boton-carrito">Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -192,9 +191,7 @@
                         </a>
                         <p>Camisa Negra manga larga</p>
                         <p class="price"><s>COL $82,500</s></p>
-                        <p class="precio-descuento">COL $161,500</p>
-                        <button class="boton-carrito">Agregar al carrito</button>
-                        
+                        <p class="precio-descuento">COL $161,500</p>                        
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -205,9 +202,7 @@
                         </a>
                         <p>Camisa Azul manga larga</p>
                         <p class="price"><s>COL $82,500</s></p>
-                        <p class="precio-descuento">COL $161,500</p>
-                        <button class="boton-carrito">Agregar al carrito</button>
-                        
+                        <p class="precio-descuento">COL $161,500</p>                        
                     </div>
                 </div>
 
@@ -220,9 +215,6 @@
                         <p>Camisa Lino manga larga</p>
                         <p class="price"><s>COL $82,500</s></p>
                         <p class="precio-descuento">COL $161,500</p>
-                        <button class="boton-carrito">Agregar al carrito</button>
-
-                      
                     </div>
                 </div>
             </div>
@@ -239,9 +231,7 @@
                         </a>
                         <p>Camisa Lino manga corta</p>
                         <p class="price"><s>COL $82,500</s></p>
-                        <p class="precio-descuento">COL $161,500</p>
-                        <button class="boton-carrito">Agregar al carrito</button>
-                       
+                        <p class="precio-descuento">COL $161,500</p>                       
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -252,9 +242,7 @@
                         </a>
                         <p>Camisa Rosa manga corta</p>
                         <p class="price"><s>COL $82,500</s></p>
-                        <p class="precio-descuento">COL $161,500</p>
-                        <button class="boton-carrito">Agregar al carrito</button>
-                      
+                        <p class="precio-descuento">COL $161,500</p>                      
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -265,9 +253,7 @@
                         </a>
                         <p>Camisa Cuadros manga corta</p>
                         <p class="price"><s>COL $82,500</s></p>
-                        <p class="precio-descuento">COL $161,500</p>
-                        <button class="boton-carrito">Agregar al carrito</button>
-                       
+                        <p class="precio-descuento">COL $161,500</p>                       
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -278,9 +264,7 @@
                         </a>
                         <p>Camisa Rosa manga corta</p>
                         <p class="price"><s>COL $82,500</s></p>
-                        <p class="precio-descuento">COL $161,500</p>
-                        <button class="boton-carrito">Agregar al carrito</button>
-                       
+                        <p class="precio-descuento">COL $161,500</p>                       
                     </div>
                 </div>
             </div>
@@ -298,7 +282,6 @@
                         <p>Polo Premium Slim Fit</p>
                         <p class="price"><s>COL $82,500</s></p>
                         <p class="precio-descuento">COL $161,500</p>
-                        <button class="boton-carrito">Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -310,7 +293,6 @@
                         <p>Polo Moda Slim Fit</p>
                         <p class="price"><s>COL $82,500</s></p>
                         <p class="precio-descuento">COL $161,500</p>
-                        <button class="boton-carrito">Agregar al carrito</button>  
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -322,8 +304,6 @@
                         <p>Polo Business Tejida</p>
                         <p class="price"><s>COL $82,500</s></p>
                         <p class="precio-descuento">COL $161,500</p>
-                        <button class="boton-carrito">Agregar al carrito</button>   
-
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -334,9 +314,7 @@
                         </a>
                         <p>Camisa Rosas manga corta</p>
                         <p class="price"><s>COL $82,500</s></p>
-                        <p class="precio-descuento">COL $161,500</p>
-                        <button class="boton-carrito">Agregar al carrito</button>                
-                        
+                        <p class="precio-descuento">COL $161,500</p>                        
                     </div>
                 </div>
             </div>

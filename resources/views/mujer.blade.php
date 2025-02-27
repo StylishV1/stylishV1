@@ -180,7 +180,6 @@
                         </a>
                         <p>Camisa Lino manga larga</p>
                         <p class="price">COL $250,000</p>
-                        <button class="boton-carrito">Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -190,9 +189,7 @@
                             <img src="{{ asset('img/22.jpg') }}" alt="Camisa  manga larga">
                         </a>
                         <p>Camisa Negra manga larga</p>
-                        <p class="price">COL $300,000</p>
-                        <button class="boton-carrito">Agregar al carrito</button>
-                        
+                        <p class="price">COL $300,000</p>                        
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -202,9 +199,7 @@
                         <img src="{{ asset('img/22.jpg') }}" alt="Camisa Azul manga larga">
                         </a>
                         <p>Camisa Azul manga larga</p>
-                        <p class="price">COL $202,000</p>
-                        <button class="boton-carrito">Agregar al carrito</button>
-                        
+                        <p class="price">COL $202,000</p>                        
                     </div>
                 </div>
 
@@ -215,9 +210,7 @@
                         <img src="{{ asset('img/22.jpg') }}" alt="Camisa Lino manga larga">
                         </a>
                         <p>Camisa Lino manga larga</p>
-                        <p class="price">COL $250,000</p>
-                        <button class="boton-carrito">Agregar al carrito</button>
-                      
+                        <p class="price">COL $250,000</p>                      
                     </div>
                 </div>
             </div>
@@ -233,9 +226,7 @@
                         <img src="{{ asset('img/5.jpg') }}" alt="Camisa Lino manga corta">
                         </a>
                         <p>Camisa Lino manga corta</p>
-                        <p class="price">COL $144,800</p>
-                        <button class="boton-carrito">Agregar al carrito</button>
-                       
+                        <p class="price">COL $144,800</p>                       
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -245,9 +236,7 @@
                         <img src="{{ asset('img/5.jpg') }}" alt="Camisa Rosa manga corta">
                         </a>
                         <p>Camisa Rosa manga corta</p>
-                        <p class="price">COL $190,000</p>
-                        <button class="boton-carrito">Agregar al carrito</button>
-                      
+                        <p class="price">COL $190,000</p>                      
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -257,9 +246,7 @@
                         <img src="{{ asset('img/5.jpg') }}" alt="Camisa Cuadros manga corta">
                         </a>
                         <p>Camisa Cuadros manga corta</p>
-                        <p class="price">COL $160,000</p>
-                        <button class="boton-carrito">Agregar al carrito</button>
-                       
+                        <p class="price">COL $160,000</p>                       
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -269,9 +256,7 @@
                         <img src="{{ asset('img/5.jpg') }}" alt="Camisa Rosa manga corta">
                         </a>
                         <p>Camisa Rosa manga corta</p>
-                        <p class="price">COL $190,000</p>
-                        <button class="boton-carrito">Agregar al carrito</button>
-                       
+                        <p class="price">COL $190,000</p>                       
                     </div>
                 </div>
             </div>
@@ -288,7 +273,6 @@
                         </a>
                         <p>Polo Premium Slim Fit</p>
                         <p class="price">COL $90,000</p>
-                        <button class="boton-carrito">Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -299,7 +283,6 @@
                         </a>
                         <p>Polo Moda Slim Fit</p>
                         <p class="price">COL $82,500</p>
-                        <button class="boton-carrito">Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -310,8 +293,6 @@
                         </a>
                         <p>Polo Business Tejida</p>
                         <p class="price">COL $89,910</p>
-                        <button class="boton-carrito">Agregar al carrito</button>
-
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -321,9 +302,7 @@
                         <img src="{{ asset('img/Daniel7.jpeg') }}" alt="Camisa Rosa manga corta">
                         </a>
                         <p>Camisa Rosas manga corta</p>
-                        <p class="price">COL $190,000</p>
-                        <button class="boton-carrito">Agregar al carrito</button>
-                        
+                        <p class="price">COL $190,000</p>                        
                     </div>
                 </div>
             </div>
