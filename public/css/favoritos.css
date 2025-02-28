@@ -1,97 +1,22 @@
-/* iNICIO DE INTERFAZ DE FAVORITOS */
-
-/* Global Styles */
-body {
-    font-family: 'Montserrat', sans-serif;
+/* INICIO INTERFAZ PRINCPAL */  
+* {
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
-    color: #333;
+    box-sizing: border-box;
 }
-
-/* Sección de Favoritos Única */
-.fav-section-stylish-unique {
+/* Barra de promoción */
+.promo-bar {
+    background-color: #000;
+    color: #fff;
     text-align: center;
-    margin: 30px 0;
+    padding: 9px 0;
+    font-size: 80%;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%; /* Cambiado a 100% */
+    overflow: hidden; /* Evita cualquier desbordamiento */
 }
 
-.fav-section-stylish-unique h1 {
-    font-size: 28px;
-    margin-bottom: 10px;
-    color: #000;
-}
-
-.fav-section-stylish-unique p {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 30px;
-}
-
-/* Cuadrícula de Productos Única */
-.fav-product-grid-stylish {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 0 15px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.fav-product-card-advanced {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    overflow: hidden;
-    position: relative;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.fav-product-card-advanced img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.fav-product-card-advanced h3 {
-    font-size: 18px;
-    margin: 10px 0;
-    font-weight: 600;
-}
-
-.fav-product-card-advanced .fav-price-tag-stylish {
-    font-size: 16px;
-    font-weight: bold;
-    color: #000;
-    margin: 10px 0;
-}
-
-/* Botón de Añadir al Carrito Único */
-.fav-product-card-advanced button {
-    background-color: #fff;
-    color: #000;
-    border: 1px solid #000;
-    padding: 10px 15px;
-    font-size: 14px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: all 0.3s ease;
-}
-
-.fav-product-card-advanced button:hover {
-    background-color: #f0f0f0;
-    border-color: #666;
-    color: #000;
-}
-
-
-
-/* Header Encabezado  */
+/* Header */
 header {
     background-color: #f8f8f8;
     padding: 0 0 20px;
@@ -352,16 +277,320 @@ footer a {
     color: #555; /* Color al pasar el cursor */
 }
 
-/* Barra de promoción */
-.promo-bar {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 9px 0;
-    font-size: 80%;
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+    grid-template-rows: repeat(2, 1fr); /* Dos filas de igual tamaño */
+    gap: 0px; /* Espacio entre las imágenes */
+    margin: 20px auto; /* Centra la galería y agrega margen */
+    max-width: 800px; /* Ancho máximo de la galería */
+}
+
+
+.gallery-item {
+    overflow: hidden; /* Oculta cualquier contenido que sobresalga */
+    cursor: pointer; /* Cambia el cursor al pasar sobre las imágenes */
+}
+
+.gallery-item img {
+    width: 100%; /* Asegura que la imagen ocupe todo el espacio del contenedor */
+    height: 100%; /* Asegura que la imagen ocupe la altura del contenedor */
+    border-top: #e0e0e0; /* Bordes redondeados */
+    transition: transform 0.3s; /* Efecto de transición */
+}
+.gallery-item img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+.collection-2024 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.collection-item img {
+    width: 420px; /* Ajusta el ancho de todas las imágenes */
+    height: 400px; /* Define una altura fija para uniformidad */
+    object-fit: cover; /* Recorta las imágenes si es necesario para que se adapten al contenedor */
+    border: 3px solid transparent;
+    margin: 1px; /* Espacio uniforme alrededor de las imágenes */
+}
+
+.collection-item img:hover {
+    transition: transform 0.3s; /* Añade un efecto de transformación para una transición suave */
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.discover-button,
+.back-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #333;
+    background-color: #e0e0e0;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.discover-button:hover,
+.back-button:hover {
+    background-color: #c0c0c0;
+    color: #000;
+    transition: background-color 0.3s;
+}
+
+#featured-image {
+    width: 100%; /* El contenedor ocupa todo el ancho */
+    height: auto; /* Se ajusta dinámicamente según el contenido */
+    position: relative; /* Para mantener control sobre elementos hijos */
+    overflow: hidden; /* Evita que partes no deseadas de la imagen sobresalgan */
+}
+
+#featured-image .featured-img {
+    width: 100%; /* La imagen abarca todo el ancho del contenedor */
+    height: 100%; /* La imagen se ajusta para cubrir el contenedor */
+    object-fit: cover; /* Hace que la imagen se recorte adecuadamente sin deformarse */
+    display: block; /* Elimina el espacio vacío debajo de la imagen */
+}
+* Estilos para el formulario de registro */
+.login-form { 
+    /* Oculta el formulario inicialmente */
+    display: none; 
+    /* Fija su posición en la pantalla */
+    position: fixed; 
+    /* Establece la posición superior y derecha */
+    top: 50px; 
+    right: 10px; 
+    /* Define el color de fondo */
+    background: #fff; 
+    /* Agrega un borde al formulario */
+    border: 1px solid #ddd; 
+    /* Añade espacio interno alrededor del contenido */
+    padding: 20px; 
+    /* Aplica una sombra alrededor del formulario */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    /* Establece la prioridad de apilamiento */
+    z-index: 1000; 
+}
+
+.login-content h2 { 
+    /* Elimina el margen superior del encabezado */
+    margin-top: 0; 
+    /* Define el tamaño de fuente del encabezado */
+    font-size: 1.5rem; 
+}
+
+.login-content form { 
+    /* Hace que los elementos dentro del formulario se apilen verticalmente */
+    display: flex; 
+    flex-direction: column; 
+}
+
+.login-content label { 
+    /* Establece margen superior e inferior para las etiquetas */
+    margin-top: 10px; 
+    margin-bottom: 5px; 
+}
+
+.login-content input { 
+    /* Agrega espacio interno en los campos de entrada */
+    padding: 10px; 
+    /* Establece margen inferior entre los campos */
+    margin-bottom: 10px; 
+    /* Define un borde alrededor de los campos */
+    border: 1px solid #ddd; 
+    /* Redondea las esquinas de los campos */
+    border-radius: 4px; 
+}
+
+.login-content a { 
+    /* Establece el color del texto del enlace */
+    color: #000000; 
+    /* Elimina el subrayado predeterminado */
+    text-decoration: none; 
+    /* Ajusta el tamaño de fuente del enlace */
+    font-size: 0.9rem; 
+    /* Establece un margen inferior */
+    margin-bottom: 10px; 
+}
+
+.login-content button { 
+    /* Agrega espacio interno al botón */
+    padding: 10px; 
+    /* Elimina el borde predeterminado */
+    border: none; 
+    /* Define el color de fondo del botón */
+    background-color: #E4E4E4; 
+    /* Establece el color del texto */
+    color: #000000; 
+    /* Ajusta el tamaño de fuente */
+    font-size: 1rem; 
+    /* Redondea las esquinas del botón */
+    border-radius: 4px; 
+    /* Cambia el cursor al pasar sobre el botón */
+    cursor: pointer; 
+}
+
+/* Estilos de login y registro*/
+.login-footer { 
+    /* Alinea los elementos en línea y los distribuye horizontalmente */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.login-footer p { 
+    /* Elimina el margen predeterminado del párrafo */
+    margin: 0; 
+}
+
+.login-footer a { 
+    /* Establece el color del enlace */
+    color: #000000; 
+    /* Elimina el subrayado predeterminado */
+    text-decoration: none; 
+    /* Ajusta el tamaño de fuente del enlace */
+    font-size: 0.9rem; 
+}
+
+.login-footer button { 
+    /* Hace transparente el fondo del botón */
+    background-color: transparent; 
+    /* Define el color del texto */
+    color: #000000; 
+    /* Elimina el borde predeterminado */
+    border: none; 
+    /* Cambia el cursor al pasar sobre el botón */
+    cursor: pointer; 
+}
+/* CIEERE INTERFAZ PRINCPAL */  
+
+
+
+
+
+/* iNICIO DE INTERFAZ DE FAVORITOS*/
+
+
+/* Global Styles */
+body {
     font-family: 'Montserrat', sans-serif;
-    width: 100%; /* Cambiado a 100% */
-    overflow: hidden; /* Evita cualquier desbordamiento */
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Favoritos Section */
+.favorites-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.favorites-container h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #2e0a0a;
+}
+
+.favorites-container p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Product Grid */
+.favorites-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.favorite-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.favorite-item img {
+    width: 100%;
+    height: 300px; /* Aumentar la altura */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.favorite-item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.favorite-item .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2e0a0a;
+    margin: 10px 0;
+}
+
+/* Botón de Añadir al Carrito */
+.favorite-item button {
+    background-color: #fff; /* Fondo blanco */
+    color: #000; /* Texto negro */
+    border: 1px solid #000; /* Borde negro */
+    padding: 10px 15px; /* Espaciado interno */
+    font-size: 14px; /* Tamaño de letra */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar */
+    margin-top: 10px;
+    transition: all 0.3s ease; /* Transición suave para hover */
+}
+
+.favorite-item button:hover {
+    background-color: #f0f0f0; /* Fondo gris claro en hover */
+    border-color: #666; /* Cambia el color del borde en hover */
+    color: #000; /* Mantén el texto negro */
 }
 
 /* FINALIZA INTERFAZ DE FAVORITOS */
+
+
+
+.container h2 {
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+
+.card {
+    height: 100%;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-img-top {
+    height: 150px;
+    object-fit: cover;
+}

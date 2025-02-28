@@ -14,7 +14,7 @@
     <header> <!-- Sección del encabezado de la página -->
         <!-- Barra de promoción -->
         <div class="promo-bar">
-            Solo por hoy 201% de descuento en camisas y blusas <!-- Texto de promoción -->
+            Solo por hoy 21% de descuento en camisas y blusas <!-- Texto de promoción -->
         </div>
 
         <div class="container"> <!-- Contenedor principal del encabezado -->
@@ -27,8 +27,8 @@
             <!-- Menú de navegación centrado -->
             <nav class="centered-menu">
                 <ul class="top-menu"> <!-- Lista de elementos del menú superior -->
-                    <li><a href="#">Hombre</a></li> <!-- Enlace a la sección de Hombre -->
-                    <li><a href="#">Mujer</a></li> <!-- Enlace a la sección de Mujer -->
+                    <li><a href="{{ url('/hombre') }}">Hombre</a></li> <!-- Enlace a la sección de Hombre -->
+                    <li><a href="{{ url('/tendencias') }}">Mujer</a></li> <!-- Enlace a la sección de Mujer -->
                     <li><a href="{{ url('/ofertas') }}">Ofertas</a></li> <!-- Enlace a la sección de Ofertas -->
                     <li><a href="{{ url('/tendencias') }}">Tendencias</a></li> <!-- Enlace a la sección de Tendencias -->
                 </ul>

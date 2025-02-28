@@ -6,7 +6,7 @@ use App\Http\Controllers\CartController;
 use App\Http\Controllers\FavoritosController;
 use App\Http\Controllers\BolsaController;
 use App\Http\Controllers\ProfileController;
-
+use App\Http\Controllers\AuthController;
 
 //Rutas de Bolsa o carrito de compra ya para pagar
 Route::delete('/bolsa/{id}', [BolsaController::class, 'destroy'])->name('bolsa.destroy');
@@ -30,13 +30,13 @@ Route::post('/add-to-cart', [CartController::class, 'addToCart'])->name('add.to.
 Route::middleware(['auth'])->group(function () {
     Route::get('/perfil', [ProfileController::class, 'index'])->name('perfil');
 });
-
 Route::put('/perfil/actualizar', [ProfileController::class, 'update'])->name('perfil.update')->middleware('auth');
-
 Route::get('/perfil', [ProfileController::class, 'mostrareFavoritos'])->middleware('auth');
 
-//rutas de login y registro
-use App\Http\Controllers\AuthController;
+
+
+//rutas de login y registro 
+
 
 Route::post('/register', [AuthController::class, 'register'])->name('register');
 Route::post('/login', [AuthController::class, 'login'])->name('login');
@@ -62,15 +62,15 @@ Route::get('/contactanos', function () {
 Route::post('/contactanos', [ContactanosController::class, 'store'])->name('contactanos.store');
 
 
-
 Route::get('/favoritos', [FavoritosController::class, 'obtenerFavoritos']);
 Route::post('/agregar-favorito', [FavoritosController::class, 'agregarFavorito']);
 Route::post('/eliminar-favorito', [FavoritosController::class, 'eliminarFavorito']);
+Route::post('/favoritos/eliminar', [FavoritosController::class, 'eliminarFavorito']);
 
-Route::get('/perfiles', function(){
-    return view('perfiles');
-}
-);
+Route::get('/mis-favoritos', [FavoritosController::class, 'mostrarFavoritos'])->middleware('auth');
+
+
+
 
 
 // Asegúrate de tener esta vista creada.Route::get('/bolsa', function (){  return view('detallebolsa');});
@@ -120,10 +120,6 @@ Route::get('/ofertas', function () {
 
 
 
-
-Route::get('/perfilesm', function () {
-    return view('perfiles');
-})->middleware('auth');
 
 
 Route::get('/tendencias', function () {
