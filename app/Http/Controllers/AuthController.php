@@ -46,8 +46,7 @@ public function register(Request $request)
             // Regenerar la sesión para evitar problemas de fijación de sesión
             $request->session()->regenerate();
     
-            // Redirigir al usuario a su perfil
-            return redirect()->route('perfil')->with('success', '¡Has iniciado sesión correctamente!');
+           
         }
     
         // Si las credenciales no son correctas, redirigir con un mensaje de error
