@@ -62,7 +62,7 @@
             </form>
         </div> <br><br>
         
-        <h2 class="text-center mb-5 titulol">MUJER</h2>
+        <h2 class="text-center mb-5 titulol">MUJER 2</h2>
        
 
         <!-- Categories -->
@@ -246,60 +246,60 @@
 
 
     <script>
-   $(".favorites").click(function() {
-    var producto = $(this).closest('.product-card');
-    var nombreProducto = producto.find('p').first().text();  // Nombre del producto
-    var precioProducto = producto.find('.price').text().replace("COL $", "").replace(",", "").trim();  // Limpiar precio
-    var imagenProducto = producto.find('img').attr('src');  // URL de la imagen
-
-    var isFavorite = $(this).hasClass('active'); // Verifica si ya está marcado como favorito
-
-    // Cambiar el color del corazón a rojo o gris
-    $(this).toggleClass('active'); // Añadir o quitar la clase 'active' al hacer clic
-
-    // Si no es favorito, agregarlo
-    if (!isFavorite) {
-        $.ajax({
-            url: "/agregar-favorito", // Ruta del controlador
-            method: "POST",
-            data: {
-                _token: "{{ csrf_token() }}", // Token CSRF para protección
-                nombre: nombreProducto,
-                precio: precioProducto,
-                imagen: imagenProducto,
-            },
-            success: function(response) {
-                alert(response.mensaje); // Mostrar mensaje de éxito
-            },
-            error: function() {
-                alert("Hubo un error al agregar el producto a favoritos.");
-            }
-        });
-    } else {
-        // Si es favorito, eliminarlo
-        $.ajax({
-            url: "/eliminar-favorito", // Ruta para eliminar de favoritos
-            method: "POST",
-            data: {
-                _token: "{{ csrf_token() }}", // Token CSRF para protección
-                nombre: nombreProducto,  // Aquí puedes enviar solo el nombre para identificarlo
-            },
-            success: function(response) {
-                alert(response.mensaje); // Mostrar mensaje de éxito
-            },
-            error: function() {
-                alert("Hubo un error al eliminar el producto de favoritos.");
-            }
-        });
-    }
-});
-
-
-    </script>
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        $(".favorites").click(function() {
+         var producto = $(this).closest('.product-card');
+         var nombreProducto = producto.find('p').first().text();  // Nombre del producto
+         var precioProducto = producto.find('.price').text().replace("COL $", "").replace(",", "").trim();  // Limpiar precio
+         var imagenProducto = producto.find('img').attr('src');  // URL de la imagen
+     
+         var isFavorite = $(this).hasClass('active'); // Verifica si ya está marcado como favorito
+     
+         // Cambiar el color del corazón a rojo o gris
+         $(this).toggleClass('active'); // Añadir o quitar la clase 'active' al hacer clic
+     
+         // Si no es favorito, agregarlo
+         if (!isFavorite) {
+             $.ajax({
+                 url: "/agregar-favorito", // Ruta del controlador
+                 method: "POST",
+                 data: {
+                     _token: "{{ csrf_token() }}", // Token CSRF para protección
+                     nombre: nombreProducto,
+                     precio: precioProducto,
+                     imagen: imagenProducto,
+                 },
+                 success: function(response) {
+                     alert(response.mensaje); // Mostrar mensaje de éxito
+                 },
+                 error: function() {
+                     alert("Hubo un error al agregar el producto a favoritos.");
+                 }
+             });
+         } else {
+             // Si es favorito, eliminarlo
+             $.ajax({
+                 url: "/eliminar-favorito", // Ruta para eliminar de favoritos
+                 method: "POST",
+                 data: {
+                     _token: "{{ csrf_token() }}", // Token CSRF para protección
+                     nombre: nombreProducto,  // Aquí puedes enviar solo el nombre para identificarlo
+                 },
+                 success: function(response) {
+                     alert(response.mensaje); // Mostrar mensaje de éxito
+                 },
+                 error: function() {
+                     alert("Hubo un error al eliminar el producto de favoritos.");
+                 }
+             });
+         }
+     });
+     
+     
+         </script>
+     
+     
+     
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
 </body>
 </html>
