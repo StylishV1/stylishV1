@@ -65,7 +65,7 @@
     <header>
         <!-- Barra de promoción -->
         <div class="promo-bar">
-            Solo por hoy 500% de descuento en camisas y blusas
+            Solo por hoy 30% de descuento en camisas y blusas
         </div>
 
         <div class="container">
@@ -93,7 +93,7 @@
                     @else
                         <a href="#" id="profile-link"><i class="fas fa-user"></i> Perfil</a>
                     @endif
-                    <a href="{{ url('/favoritos') }}"><i class="fas fa-heart"></i> Favoritos</a>
+                    <a href="{{ url('/mis-favoritos') }}"><i class="fas fa-heart"></i> Favoritos</a>
                     <a href="{{ url('/bolsas') }}"><i class="fas fa-shopping-cart"></i> Carrito</a>
                     @if(Auth::check())
                         <a href="#" onclick="document.getElementById('logout-form').submit()">
