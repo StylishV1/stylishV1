@@ -12,7 +12,7 @@
 
 </head>
 <body>
-<header> <!-- Sección del encabezado de la página -->
+    <header> <!-- Sección del encabezado de la página -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <!-- Barra de promoción -->
@@ -30,8 +30,8 @@
             <!-- Menú de navegación centrado -->
             <nav class="centered-menu">
                 <ul class="top-menu"> <!-- Lista de elementos del menú superior -->
-                    <li><a href="{{ url('/hombre') }}">Hombre</a></li> <!-- Enlace a la sección de Hombre -->
-                    <li><a href="{{ url('/mujer') }}">Mujer</a></li> <!-- Enlace a la sección de MUJER -->
+                    <li><a href="#">Hombre</a></li> <!-- Enlace a la sección de Hombre -->
+                    <li><a href="#">Mujer</a></li> <!-- Enlace a la sección de Mujer -->
                     <li><a href="{{ url('/ofertas') }}">Ofertas</a></li> <!-- Enlace a la sección de Ofertas -->
                     <li><a href="{{ url('/tendencias') }}">Tendencias</a></li> <!-- Enlace a la sección de Tendencias -->
                 </ul>
@@ -40,112 +40,10 @@
             <!-- Lista de iconos a la izquierda -->
             <ul class="left-icons">
                 
-                
-                <li><a href="{{ url('/buscar') }}" id="search-toggle"><i class="fas fa-search"></i> Buscar</a></li>
-                
-                <li><a href="{{ route('perfil') }}" id="profile-link"><i class="fas fa-user"></i> Perfil</a></li>
-                
-                
-
-
+                <li><a href="{{ url('/perfiles') }}" id="profile-link"><i class="fas fa-user"></i> Perfil</a></li> <!-- Icono de perfil -->
                 <li><a href="{{ url('/favoritos') }}"><i class="fas fa-heart"></i> Favoritos</a></li> <!-- Icono de favoritos -->
-                <li><a href="{{ url('/bolsas') }}"><i class="fas fa-shopping-cart"></i> Carrito</a></li> <!-- Icono de carrito de compras -->
+                <li><a href="{{ url('/carrito') }}"><i class="fas fa-shopping-cart"></i> Carrito</a></li> <!-- Icono de carrito de compras -->
             </ul>
-        </div>
-    </header>
-<!-- Verificar si el usuario está autenticado -->
-@if(Auth::check())
-    <!-- Si el usuario está autenticado, mostrar el mensaje de bienvenida y el formulario de cierre de sesión -->
-    <div style="position: absolute; top: 20px; right: 10px;">
-        
-        <form method="POST" action="{{ route('logout') }}" style="display:inline;">
-            @csrf
-        </form>
-    </div>
-@else
-
-
-
-    <!-- Si el usuario no está autenticado, mostrar los formularios de login y registro -->
-
-    <!-- Formulario de Inicio de Sesión -->
-    <div id="login-form" class="login-form">
-        <div class="login-content">
-            <h2>Iniciar sesión</h2>
-            <!-- Mostrar mensajes de error en el formulario de login -->
-            @if($errors->has('email') || $errors->has('password'))
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
-            <form method="POST" action="{{ url('/login') }}">
-                @csrf
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password" required>
-
-                <button type="submit">Iniciar sesión</button>
-            </form>
-            <div class="login-footer">
-                <p>¿Nuevo cliente? <a href="#" id="register-link">Crea tu cuenta</a></p>
-                <button id="cancel-button">Cancelar</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Formulario de Registro -->
-    <div id="register-form" class="login-form">
-        <div class="login-content">
-            <h2>Registrarme</h2>
-            <!-- Mostrar mensajes de error en el formulario de registro -->
-            @if($errors->has('name') || $errors->has('email') || $errors->has('password'))
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
-            <form method="POST" action="{{ url('/register') }}">
-                @csrf
-                <label for="first-name">Nombre:</label>
-                <input type="text" id="first-name" name="name" required>
-
-                <label for="last-name">Apellido:</label>
-                <input type="text" id="last-name" name="last_name" required>
-
-                <label for="register-email">Correo electrónico:</label>
-                <input type="email" id="register-email" name="email" required>
-
-                <label for="register-password">Contraseña:</label>
-                <input type="password" id="register-password" name="password" required>
-
-                <label for="password_confirmation">Confirmar Contraseña:</label>
-                <input type="password" id="password_confirmation" name="password_confirmation" required>
-
-                <button type="submit">Registrarme</button>
-            </form>
-            <div class="login-footer">
-                <p>¿Ya tienes una cuenta? <a href="#" id="login-link">Inicia sesión</a></p>
-                <button id="register-cancel-button">Cancelar</button>
-            </div>
-        </div>
-    </div>
-@endif
-
-<!-- Mostrar mensaje de éxito después del registro -->
-@if(session('success'))
-    <div class="alert alert-success">
-        {{ session('success') }}
-    </div>
-@endif
         </div>
     </header>
 

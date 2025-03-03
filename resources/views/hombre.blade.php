@@ -30,8 +30,8 @@
             <!-- Menú de navegación centrado -->
             <nav class="centered-menu">
                 <ul class="top-menu"> <!-- Lista de elementos del menú superior -->
-                    <li><a href="#">Hombre</a></li> <!-- Enlace a la sección de Hombre -->
-                    <li><a href="#">Mujer</a></li> <!-- Enlace a la sección de Mujer -->
+                    
+                    <li><a href="{{ url('/mujer') }}">Mujer</a></li> <!-- Enlace a la sección de Mujer -->
                     <li><a href="{{ url('/ofertas') }}">Ofertas</a></li> <!-- Enlace a la sección de Ofertas -->
                     <li><a href="{{ url('/tendencias') }}">Tendencias</a></li> <!-- Enlace a la sección de Tendencias -->
                 </ul>
@@ -74,7 +74,7 @@
                     <div class="product-card position-relative">
                         <span class="favorites">&#9829;</span>
                         <a href="{{ url('/carrito') }}">
-                            <img src="{{ asset('img/24.jpg') }}" alt="Camisa Lino manga larga">
+                            <img src="{{ asset('img/lino.jpg') }}" alt="Camisa Lino manga larga"style="width: 100%; height: auto; max-width: 200px;">
                         </a>
                         <p>Camisa Lino manga larga</p>
                         <p class="price">COL $250,000</p>
@@ -84,7 +84,7 @@
                     <div class="product-card position-relative">
                         <span class="favorites">&#9829;</span>
                         <a href="{{ url('/carrito') }}">
-                            <img src="{{ asset('img/24.jpg') }}" alt="Camisa  manga larga">
+                            <img src="{{ asset('img/hhh.jpg') }}" alt="Camisa  manga larga">
                         </a>
                         <p>Camisa Negra manga larga</p>
                         <p class="price">COL $300,000</p>                        
@@ -94,7 +94,7 @@
                     <div class="product-card position-relative">
                         <span class="favorites">&#9829;</span>
                         <a href="{{ url('/carrito') }}">
-                        <img src="{{ asset('img/24.jpg') }}" alt="Camisa Azul manga larga">
+                        <img src="{{ asset('img/luis v.jpg') }}" alt="Camisa Azul manga larga">
                         </a>
                         <p>Camisa Azul manga larga</p>
                         <p class="price">COL $202,000</p>                        
@@ -105,7 +105,7 @@
                     <div class="product-card position-relative">
                         <span class="favorites">&#9829;</span>
                         <a href="{{ url('/carrito') }}">
-                        <img src="{{ asset('img/24.jpg') }}" alt="Camisa Lino manga larga">
+                        <img src="{{ asset('img/lino-mangalarga.jpg') }}" alt="Camisa Lino manga larga">
                         </a>
                         <p>Camisa Lino manga larga</p>
                         <p class="price">COL $250,000</p>                      
@@ -121,7 +121,7 @@
                     <div class="product-card position-relative">
                         <span class="favorites">&#9829;</span>
                         <a href="{{ url('/carrito') }}">
-                        <img src="{{ asset('img/24.jpg') }}" alt="Camisa Lino manga corta">
+                        <img src="{{ asset('img/pantalon hombre.jpg') }}" alt="Camisa Lino manga corta">
                         </a>
                         <p>Camisa Lino manga corta</p>
                         <p class="price">COL $144,800</p>                       
@@ -131,7 +131,7 @@
                     <div class="product-card position-relative">
                         <span class="favorites">&#9829;</span>
                         <a href="{{ url('/carrito') }}">
-                        <img src="{{ asset('img/24.jpg') }}" alt="Camisa Rosa manga corta">
+                        <img src="{{ asset('img/pantalon cafe.jpg') }}" alt="Camisa Rosa manga corta">
                         </a>
                         <p>Camisa Rosa manga corta</p>
                         <p class="price">COL $190,000</p>                      
@@ -141,7 +141,7 @@
                     <div class="product-card position-relative">
                         <span class="favorites">&#9829;</span>
                         <a href="{{ url('/carrito') }}">
-                        <img src="{{ asset('img/24.jpg') }}" alt="Camisa Cuadros manga corta">
+                        <img src="{{ asset('img/pantalon campana.jpg') }}" alt="Camisa Cuadros manga corta">
                         </a>
                         <p>Camisa Cuadros manga corta</p>
                         <p class="price">COL $160,000</p>                       
@@ -151,7 +151,7 @@
                     <div class="product-card position-relative">
                         <span class="favorites">&#9829;</span>
                         <a href="{{ url('/carrito') }}">
-                        <img src="{{ asset('img/24.jpg') }}" alt="Camisa Rosa manga corta">
+                        <img src="{{ asset('img/pantalon formal.jpg') }}" alt="Camisa Rosa manga corta">
                         </a>
                         <p>Camisa Rosa manga corta</p>
                         <p class="price">COL $190,000</p>                       
@@ -161,13 +161,13 @@
         </div>
 
         <div class="category mb-5">
-            <h4>FALDAS</h4>
+            <h4>POLOS</h4>
             <div class="row">
                 <div class="col-md-3">
                     <div class="product-card position-relative">
                         <span class="favorites">&#9829;</span>
                         <a href="{{ url('/carrito') }}">
-                        <img src="{{ asset('img/Daniel7.jpeg') }}" alt="Polo Premium Slim Fit">
+                        <img src="{{ asset('img/polo.jpg') }}" alt="Polo Premium Slim Fit">
                         </a>
                         <p>Polo Premium Slim Fit</p>
                         <p class="price">COL $90,000</p>
@@ -177,7 +177,7 @@
                     <div class="product-card position-relative">
                         <span class="favorites">&#9829;</span>
                         <a href="{{ url('/carrito') }}">
-                        <img src="{{ asset('img/Daniel7.jpeg') }}" alt="Polo Moda Slim Fit">
+                        <img src="{{ asset('img/polo fil.jpg') }}" alt="Polo Moda Slim Fit">
                         </a>
                         <p>Polo Moda Slim Fit</p>
                         <p class="price">COL $82,500</p>
@@ -187,7 +187,7 @@
                     <div class="product-card position-relative">
                         <span class="favorites">&#9829;</span>
                         <a href="{{ url('/carrito') }}">
-                        <img src="{{ asset('img/Daniel7.jpeg') }}" alt="Polo Business Tejida">
+                        <img src="{{ asset('img/polo b.jpg') }}" alt="Polo Business Tejida">
                         </a>
                         <p>Polo Business Tejida</p>
                         <p class="price">COL $89,910</p>
@@ -197,7 +197,7 @@
                     <div class="product-card position-relative">
                         <span class="favorites">&#9829;</span>
                         <a href="{{ url('/carrito') }}">
-                        <img src="{{ asset('img/Daniel7.jpeg') }}" alt="Camisa Rosa manga corta">
+                        <img src="{{ asset('img/polo corta.jpg') }}" alt="Camisa Rosa manga corta">
                         </a>
                         <p>Camisa Rosas manga corta</p>
                         <p class="price">COL $190,000</p>                        

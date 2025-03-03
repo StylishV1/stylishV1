@@ -57,20 +57,20 @@
             <div class="gallery-item">
                 <a href="{{ url('/hombre') }}">
                 <a href="{{ url('/hombre2') }}">
-                    <img src="{{ asset('img/23.jpg') }}" alt="Hombre">
+                    <img src="{{ asset('img/b.jpg') }}" alt="Hombre">
                 </a>
                 <h3>Hombre</h3>
             </div>
             <div class="gallery-item">
                 <a href="{{ url('/mujer') }}">
                 <a href="{{ url('/mujer2') }}">
-                    <img src="{{ asset('img/22.jpg') }}" alt="Mujer">
+                    <img src="{{ asset('img/peña5.jpeg') }}" alt="Mujer">
                 </a>
                 <h3>Mujer</h3>
             </div>
             <div class="gallery-item">
                 <a href="{{ url('/accesorios') }}">
-                    <img src="{{ asset('img/24.jpg') }}" alt="Accesorios">
+                    <img src="{{ asset('img/rolex.jpg') }}" alt="Accesorios">
                 </a>
                 <h3>Accesorios</h3>
             </div>

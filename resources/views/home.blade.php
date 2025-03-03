@@ -59,13 +59,20 @@
       .dropdown-content a:hover {
         background-color: #f1f1f1;
       }
+
+
+
+
+      
+ 
+
     </style>
 </head>
 <body>
     <header>
         <!-- Barra de promoción -->
         <div class="promo-bar">
-            Solo por hoy 32% de descuento en camisas y blusas
+            Solo por hoy 3000% de descuento en camisas y blusas
         </div>
 
         <div class="container">

@@ -80,7 +80,7 @@
             <div class="product-card position-relative">
                 <span class="favorites">&#9829;</span>
                 <a href="{{ url('/carrito') }}">
-                    <img src="{{ asset('img/rr.jpg') }}" alt="Reloj de Diamante">
+                    <img src="{{ asset('img/roloj diamante.jpg') }}" alt="Reloj de Diamante">
                 </a>
                 <p>Reloj de Diamante</p>
                 <p class="price"><s>COL $250,000</s></p>
@@ -92,7 +92,7 @@
             <div class="product-card position-relative">
                 <span class="favorites">&#9829;</span>
                 <a href="{{ url('/carrito') }}">
-                    <img src="{{ asset('img/rr.jpg') }}" alt="Reloj de Cuarzo">
+                    <img src="{{ asset('img/reloj cuarzo.jpg') }}" alt="Reloj de Cuarzo">
                 </a>
                 <p>Reloj de Cuarzo</p>
                 <p class="price"><s>COL $300,000</s></p>
@@ -104,7 +104,7 @@
             <div class="product-card position-relative">
                 <span class="favorites">&#9829;</span>
                 <a href="{{ url('/carrito') }}">
-                    <img src="{{ asset('img/rr.jpg') }}" alt="Reloj Rolex">
+                    <img src="{{ asset('img/rolex.jpg') }}" alt="Reloj Rolex">
                 </a>
                 <p>Reloj Rolex</p>
                 <p class="price"><s>COL $202,000</s></p>
@@ -116,7 +116,7 @@
             <div class="product-card position-relative">
                 <span class="favorites">&#9829;</span>
                 <a href="{{ url('/carrito') }}">
-                    <img src="{{ asset('img/rr.jpg') }}" alt="Reloj de Oro 24k">
+                    <img src="{{ asset('img/reloj oro.jpg') }}" alt="Reloj de Oro 24k">
                 </a>
                 <p>Reloj de Oro 24k</p>
                 <p class="price"><s>COL $250,000</s></p>
@@ -135,7 +135,7 @@
             <div class="product-card position-relative">
                 <span class="favorites">&#9829;</span>
                 <a href="{{ url('/carrito') }}">
-                    <img src="{{ asset('img/cade1.jpg') }}" alt="Cadena de Diamantes">
+                    <img src="{{ asset('img/cadena diamant.jpg') }}" alt="Cadena de Diamantes">
                 </a>
                 <p>Cadena de Diamantes</p>
                 <p class="price"><s>COL $144,800</s></p>
@@ -147,7 +147,7 @@
             <div class="product-card position-relative">
                 <span class="favorites">&#9829;</span>
                 <a href="{{ url('/carrito') }}">
-                    <img src="{{ asset('img/cade1.jpg') }}" alt="Cadena de Oro">
+                    <img src="{{ asset('img/cadena oro.jpg') }}" alt="Cadena de Oro">
                 </a>
                 <p>Cadena de Oro</p>
                 <p class="price"><s>COL $190,000</s></p>
@@ -159,7 +159,7 @@
             <div class="product-card position-relative">
                 <span class="favorites">&#9829;</span>
                 <a href="{{ url('/carrito') }}">
-                    <img src="{{ asset('img/cade1.jpg') }}" alt="Cadena de Plata">
+                    <img src="{{ asset('img/cadena plata.jpg') }}" alt="Cadena de Plata">
                 </a>
                 <p>Cadena de Plata</p>
                 <p class="price"><s>COL $160,000</s></p>
@@ -171,7 +171,7 @@
             <div class="product-card position-relative">
                 <span class="favorites">&#9829;</span>
                 <a href="{{ url('/carrito') }}">
-                    <img src="{{ asset('img/cade1.jpg') }}" alt="Cadena de Cobre">
+                    <img src="{{ asset('img/cadena cobre.jpg') }}" alt="Cadena de Cobre">
                 </a>
                 <p>Cadena de Cobre</p>
                 <p class="price"><s>COL $190,000</s></p>
@@ -190,7 +190,7 @@
             <div class="product-card position-relative">
                 <span class="favorites">&#9829;</span>
                 <a href="{{ url('/carrito') }}">
-                    <img src="{{ asset('img/gafa.jpg') }}" alt="Gafas de Sol">
+                    <img src="{{ asset('img/gafas lujo.jpg') }}" alt="Gafas de Sol">
                 </a>
                 <p>Gafas de Sol</p>
                 <p class="price"><s>COL $90,000</s></p>
@@ -202,7 +202,7 @@
             <div class="product-card position-relative">
                 <span class="favorites">&#9829;</span>
                 <a href="{{ url('/carrito') }}">
-                    <img src="{{ asset('img/gafa.jpg') }}" alt="Gafas de Lujo">
+                    <img src="{{ asset('img/gafas f.jpg') }}" alt="Gafas de Lujo">
                 </a>
                 <p>Gafas de Lujo</p>
                 <p class="price"><s>COL $82,500</s></p>
@@ -214,7 +214,7 @@
             <div class="product-card position-relative">
                 <span class="favorites">&#9829;</span>
                 <a href="{{ url('/carrito') }}">
-                    <img src="{{ asset('img/gafa.jpg') }}" alt="Gafas Rojas">
+                    <img src="{{ asset('img/gafas roja.jpg') }}" alt="Gafas Rojas">
                 </a>
                 <p>Gafas Rojas</p>
                 <p class="price"><s>COL $89,910</s></p>
@@ -226,7 +226,7 @@
             <div class="product-card position-relative">
                 <span class="favorites">&#9829;</span>
                 <a href="{{ url('/carrito') }}">
-                    <img src="{{ asset('img/gafa.jpg') }}" alt="Gafas de Marca">
+                    <img src="{{ asset('img/gafas negras.jpg') }}" alt="Gafas de Marca">
                 </a>
                 <p>Gafas Blancas</p>
                 <p class="price"><s>COL $190,000</s></p>
